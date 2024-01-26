@@ -1,0 +1,774 @@
+<div class="card">
+    <div class="card-header">
+        <div class="card-body">
+            <div class="container">
+                <div class="col-md-20">
+                    <div id="contenedor" class="container mt-5 mb-5">
+
+
+                        <div id="div-icons">
+
+                            <div>
+                                <a [routerLink]="['/sigaHomePage']">
+                                    <fa-icon [icon]="faHouse" title="Home" class="icons" id="home"></fa-icon>
+                                </a>
+                            </div>
+
+                            <div>
+
+                                <a>
+                                    <fa-icon [icon]="faCircleXmark" title="Salir" class="icons" id="salir"></fa-icon>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a [routerLink]="['/sigaStudentPage']">
+                                    <fa-icon [icon]="faRotateLeft" title="Atrás" class="icons" id="atras"></fa-icon>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <form class="form-horizontal" id="formAlumno" name="formAlumno">
+                            <input type="hidden"> <br />
+
+                            <!--************************ALUMNO*********************************-->
+
+                            <div class="row-alumno">
+
+                                <h2>Datos Básicos del Alumno</h2>
+
+                            </div>
+
+                            <br />
+
+                            <div class="div-borders">
+                                <div class="row">
+
+                                    <div class="col-sm-6" id="divPrimNombre">
+                                        <label for="primNombAl" class="col-form-label" id="col-label-PrimerNomb">Primer
+                                            nombre*</label>
+                                        <input type="text" class="input-nombre-apellido" id="primNombAl"
+                                            [(ngModel)]="studentdetail.primerNombre" name="primerNombreAlumn"
+                                            disabled /><br />
+                                        <span id="spanPrimNomEst" class="span-fields">El campo Primer nombre es
+                                            obligatorio</span>
+
+                                    </div>
+
+                                    <div class="col-sm-6" id="divSegNombre">
+                                        <label for="segNombAl" class="col-form-label" id="col-label-SegundoNomb">Segundo
+                                            nombre</label>
+                                        <input type="text" class="input-nombre-apellido" id="segNombAl"
+                                            [(ngModel)]="studentdetail.segundoNombre" name="segundoNombreAlumn"
+                                            disabled />
+                                    </div>
+
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-sm-6" id="divPrimApellido">
+                                        <label for="primApellAl" class="col-form-label"
+                                            id="col-label-PrimerApell">Primer
+                                            apellido*</label>
+                                        <input type="text" class="input-nombre-apellido" id="primApellAl"
+                                            [(ngModel)]="studentdetail.primerApellido" name="primerApellidoAlumn"
+                                            disabled /><br />
+                                        <span id="spanPrimApeEst" class="span-fields">El campo Primer apellido es
+                                            obligatorio</span>
+                                    </div>
+                                    <div class="col-sm-6" id="divSegApellido">
+                                        <label for="segApellAl" class="col-form-label"
+                                            id="col-label-SegundoApell">Segundo
+                                            apellido</label>
+                                        <input type="text" class="input-nombre-apellido" id="segApellAl"
+                                            [(ngModel)]="studentdetail.segundoApellido" name="segundoApellidoAlumn"
+                                            disabled />
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-sm-6" id="div-tipo-num-ced">
+                                        <label for="numDocAl" class="col-form-label-ced">Cédula*</label>
+
+                                        <select class="input-cmb-cedula" id="tipoDocAl"
+                                            [(ngModel)]="studentdetail.tipoDocumento" name="TipoDocAlumn" disabled>
+                                            <option value='default'>---</option>
+                                            <option value='V'>V</option>
+                                            <option value='E'>E</option>
+                                            <option value='P'>P</option>
+                                        </select>
+                                        <input type="text" class="input-cedula"
+                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                            maxlength="8" id="numDocAl" [(ngModel)]="studentdetail.numeroDocumento"
+                                            name="NumDocAlumn" disabled /><br />
+                                        <span id="spanCedEst" class="span-fields">El campo Cédula es obligatorio</span>
+                                    </div>
+
+                                    <div class="col-sm-6" id="div-fecha-Nac">
+                                        <label for="fechNacAl" class="col-form-label-fech">Fecha de
+                                            nacimiento*</label>
+                                        <input type="date" class="input-fech-nac" id="fechNacAl"
+                                            [(ngModel)]="studentdetail.fechaNacimiento" name="fechaNacAlumn"
+                                            disabled /><br />
+                                        <span id="spanFechNacEst" class="span-fields">Fecha inválida, complete el campo
+                                            fecha</span>
+
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                <div class="row">
+
+                                    <div class="col-sm-6" id="divLugNacimiento">
+                                        <label class="col-label-LugarNacimiento">Lugar de nacimiento*</label>
+
+                                        <select class="selectLugarNac" [(ngModel)]="studentdetail.lugarDeNacimiento"
+                                            name="lugarNacAlumn" id="lugarNacAl" disabled>
+                                            <option value='default'>--Select--</option>
+                                            <option *ngFor="let array of countryNac" [value]="array.paisNac">
+                                                {{array.paisNac}}
+                                            </option>
+                                        </select><br />
+                                        <span id="spanLugarNacEst" class="span-fields">El campo Lugar de nacimiento es
+                                            obligatorio</span>
+                                    </div>
+                                    <div class="col-sm-6" id="divNacionalidad">
+                                        <label for="nacionalidad" class="col-label-Nacionalidad">Nacionalidad*
+                                        </label>
+                                        <input type="text" class="input-nacionalidad"
+                                            [(ngModel)]="studentdetail.nacionalidad" id="nacionalidad"
+                                            name="nacionalidadAlumn" disabled /><br />
+                                        <span id="spanNacEst" class="span-fields">El campo Nacionalidad es
+                                            obligatorio</span>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <div class="row">
+                                    <div class="col-sm-4" id="div-edad">
+                                        <label for="edadAl" id="label-edad-alumn"
+                                            class="col-form-label-edad">Edad*</label>
+                                        <input type="text" class="input-edad"
+                                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                            maxlength="2" id="edadAl" [(ngModel)]="studentdetail.edad" name="edadAlumn"
+                                            disabled /><br />
+                                        <span id="spanEdadEst" class="span-fields">El campo Edad es obligatorio</span>
+                                    </div>
+                                    <div class="col-sm-4" id="div-sexo">
+                                        <label for="sexoAl" class="col-form-label-sexo">Sexo*</label>
+                                        <select class="input-sexo" id="sexoAl" [(ngModel)]="studentdetail.sexo"
+                                            name="sexoAlumn" disabled>
+                                            <option value='default'>--Select--</option>
+                                            <option value='FEMENINO'>FEMENINO</option>
+                                            <option value='MASCULINO'>MASCULINO</option>
+                                        </select><br />
+                                        <span id="spanSexoEst" class="span-fields">El campo Sexo es obligatorio</span>
+
+                                    </div>
+
+
+                                    <div class="col-sm-4" id="div-fecha-ingr-alum">
+                                        <label for="fechIngAl" id="col-form-label-fechIngr">Ingreso*</label>
+                                        <input type="date" class="input-fech-ing"
+                                            [(ngModel)]="studentdetail.fechaIngreso" name="fechaIngresoAlumn"
+                                            id="fechIngAl" disabled /><br />
+                                        <span id="spanAdmEst" class="span-fields">Fecha inválida, complete el campo
+                                            fecha</span>
+
+                                    </div>
+                                </div>
+                                <br />
+
+                                <div class="row div-telefCorreo-Titulo">
+
+                                    <div class="col-sm-6 div-telef">
+                                        <label class="col-form-label-" id="label-telf-est">Teléfono*</label>
+                                    </div>
+
+                                    <div class="col-sm-6 div-correo">
+                                        <label class="col-form-label-">Correo electrónico*</label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="div-pr">
+
+                                    <div class="row div-telef-info">
+
+                                        <div class="div-operadora">
+
+                                            <select class="input-cod-operadora" id="codOperadoraEst"
+                                                [(ngModel)]="studentdetail.codigoOperadoraTelefono" name="codOperEst"
+                                                disabled>
+
+                                                <option value='default'>-Select-</option>
+                                                <option value='0212'>0212</option>
+                                                <option value='0412'>0412</option>
+                                                <option value='0414'>0414</option>
+                                                <option value='0416'>0416</option>
+                                                <option value='0424'>0424</option>
+                                                <option value='0426'>0426</option>
+
+                                            </select>
+
+                                        </div>
+                                        <div class="div-num-tel">
+
+                                            <input type="text" class="input-num-tlf"
+                                                [(ngModel)]="studentdetail.telefono" name="telefonoAlumn"
+                                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                maxlength="7" id="textoTlfPpalAl" disabled /><br />
+
+
+                                        </div>
+
+                                        <div class="div-span-Telef">
+                                            <span id="spanTelefEst" class="span-fields">El campo Teléfono es
+                                                obligatorio</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row1 div-correo-info">
+
+                                        <div id="div-email">
+                                            <input type="email" class="input-email" [(ngModel)]="studentdetail.email"
+                                                name="emailAlumn" id="emailAl" disabled /><br />
+                                        </div>
+                                        <div class="div-span-correo">
+                                            <span id="spanCorreoEst" class="span-fields-email">Formato-Correo-OK</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="textoDirPpalAl" class="col-form-label-dir">Dirección
+                                            domicilio*</label>
+                                        <input type="text" class="input-txtDireccion" id="textoDirPpalAl"
+                                            [(ngModel)]="studentdetail.direccion" name="direccionAlumn"
+                                            disabled /><br />
+                                        <span id="spanDirEst" class="span-fields">El campo Dirección domicilio es
+                                            obligatorio</span>
+                                    </div>
+
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+
+                            <!--************************FIN ALUMNO*********************************-->
+
+                            <!--************************REPRESENTANTE PRINCIPAL*********************************-->
+
+
+
+                            <div class="row-repr ">
+
+                                <h2>Datos Básicos del Representante</h2>
+
+                            </div>
+
+                            <br />
+
+                            <div class="div-borders">
+
+                                <div class="row">
+                                    <input type="checkbox" id="cboxDetail" value="detalles"
+                                        (click)="checkBoxDetail()" />
+                                    <label for="cbox2">Ver más detalles</label>
+                                </div>
+
+                                <div id="bloqueResumenRpr">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-6" id="div-Ced-Repr">
+                                            <label for="numDocRepr" class="col-form-label-cedula">Cédula</label>
+                                             <select class="input-cmb-cedula" name="tipoDocumento" disabled="true">
+
+                                                <option>{{studentdetail.representante.tipoDocumento}}</option>
+                                                
+                                            </select> 
+                                            
+                                            <input type="text" class="input-cedula"
+                                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                maxlength="8" id="numDocRepr"
+                                                [(ngModel)]="studentdetail.representante.numeroDocumento"
+                                                name="numeroReprDocumento" disabled />
+                                        </div>
+
+
+                                        <div class="col-sm-6" id="div-Nomb-Repr">
+
+                                            <label for="primNombRepr-res" class="col-form-label-repr-res">
+
+                                                Nombre</label> <input type="text" class="input-nombre-apellido-Repr-res"
+                                                [(ngModel)]="studentdetail.representante.primerNombre+' '+studentdetail.representante.segundoNombre
+                                                +' '+studentdetail.representante.primerApellido+' '+studentdetail.representante.segundoApellido"
+                                                name="representantePrimerNombre" id="primNombRepr" disabled />
+                                        </div>
+
+                                    </div>
+
+                                    <br />
+                                    <br />
+                                </div>
+
+                                <div id="bloqueRpr">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-6" id="divPrimNombre">
+                                            <label for="primNombRepr" class="col-form-label"
+                                                id="col-label-PrimerNombRpr">Primer
+                                                nombre*</label>
+                                            <input type="text" class="input-nombre-apellido" id="primNombRepr"
+                                                [(ngModel)]="studentdetail.representante.primerNombre"
+                                                name="primerNombreRepr" disabled /><br />
+                                            <span id="spanPrimNomRpr" class="span-fields">El campo Primer nombre es
+                                                obligatorio</span>
+
+                                        </div>
+
+                                        <div class="col-sm-6" id="divSegNombre">
+                                            <label for="segNombRepr" class="col-form-label"
+                                                id="col-label-SegundoNombRpr">Segundo
+                                                nombre</label>
+                                            <input type="text" class="input-nombre-apellido" id="segNombRepr"
+                                                [(ngModel)]="studentdetail.representante.segundoNombre"
+                                                name="segundoNombreRepr" disabled />
+                                        </div>
+
+                                    </div>
+
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-6" id="divPrimApellido">
+                                            <label for="primApellRepr" class="col-form-label"
+                                                id="col-label-PrimerApellRpr">Primer
+                                                apellido*</label>
+                                            <input type="text" class="input-nombre-apellido" id="primApellRepr"
+                                                [(ngModel)]="studentdetail.representante.primerApellido"
+                                                name="primerApellidoRepr" disabled /><br />
+                                            <span id="spanPrimApeRpr" class="span-fields">El campo Primer apellido es
+                                                obligatorio</span>
+
+                                        </div>
+                                        <div class="col-sm-6" id="divSegApellido">
+                                            <label for="segApellRepr" class="col-form-label"
+                                                id="col-label-SegundoApellRpr">Segundo
+                                                apellido</label>
+                                            <input type="text" class="input-nombre-apellido" id="segApellRepr"
+                                                [(ngModel)]="studentdetail.representante.segundoApellido"
+                                                name="segundoApellidoRepr" disabled />
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-6" id="div-tipo-num-ced">
+                                            <label for="numDocRepr" class="col-form-label-ced"
+                                                id="label-ced-rpr">Cédula*</label>
+
+                                            <select class="input-cmb-cedula" id="tipoDocRepr"
+                                                [(ngModel)]="studentdetail.representante.tipoDocumento"
+                                                name="tipoDocumento" disabled>
+
+                                                <option value='default'>---</option>
+                                                <option value='V'>V</option>
+                                                <option value='E'>E</option>
+                                                <option value='P'>P</option>
+
+                                            </select>
+
+                                            <input type="text" class="input-cedula"
+                                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                maxlength="8" id="numDocRepr"
+                                                [(ngModel)]="studentdetail.representante.numeroDocumento"
+                                                name="numeroDocumentoRepr" disabled /><br />
+                                            <span id="spanCedRpr" class="span-fields">El campo Cédula es
+                                                obligatorio</span>
+
+                                        </div>
+                                        <div class="col-sm-6" id="div-fecha-Nac">
+                                            <label for="fechNacRepr" class="col-form-label-fech"
+                                                id="label-fechaNac-rpr">Fecha de
+                                                nacimiento*</label>
+
+                                            <input type="date" class="input-fech-nac" id="fechNacRepr"
+                                                [(ngModel)]="studentdetail.representante.fechaNacimieno"
+                                                name="fechaNacimientoRepr" disabled /><br />
+                                            <span id="spanFechNacRpr" class="span-fields">Fecha inválida, complete el
+                                                campo
+                                                fecha</span>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+
+                                        <div class="col-sm-6" id="divLugNacimiento">
+                                            <label class="col-label-LugarNacimiento" id="label-lugarNac-rpr">Lugar de
+                                                nacimiento*</label>
+                                            <select class="selectLugarNac"
+                                                [(ngModel)]="studentdetail.representante.lugarDeNacimiento"
+                                                name="lugarDeNacimientoRepr" id="lugarNacRepr" disabled>
+                                                <option value='default'>--Select--</option>
+                                                <option *ngFor="let array of countryNac" [value]="array.paisNac">
+                                                    {{array.paisNac}}
+                                                </option>
+                                            </select><br />
+                                            <span id="spanLugNacRpr" class="span-fields">El campo Lugar de nacimiento es
+                                                obligatorio</span>
+
+                                        </div>
+
+                                        <div class="col-sm-6" id="divNacionalidad">
+                                            <label for="nacionalidad" class="col-label-Nacionalidad"
+                                                id="label-nacio-rpr">Nacionalidad*
+                                            </label>
+                                            <input type="text" class="input-nacionalidad"
+                                                [(ngModel)]="studentdetail.representante.nacionalidad"
+                                                id="nacionalidadRepr" name="nacionalidadRep" disabled><br />
+                                            <span id="spanNacRpr" class="span-fields">El campo Nacionalidad es
+                                                obligatorio</span>
+                                        </div>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="row">
+                                        <div class="col-sm-3" id="div-edad">
+                                            <label for="edadRepr" class="col-form-label-edad"
+                                                id="label-edad-rpr">Edad*</label>
+                                            <input type="text" class="input-edad"
+                                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                maxlength="2" id="edadRepr"
+                                                [(ngModel)]="studentdetail.representante.edad" name="edadRepr"
+                                                disabled /><br />
+                                            <span id="spanEdadRpr" class="span-fields">El campo Edad es
+                                                obligatorio</span>
+                                        </div>
+                                        <div class="col-sm-3" id="div-sexo">
+
+                                            <label for="sexoRepr" class="col-form-label-sexo"
+                                                id="label-sexo-rpr">Sexo*</label>
+                                            <select class="input-sexo" id="sexoRepr"
+                                                [(ngModel)]="studentdetail.representante.sexo" name="sexoRepr" disabled>
+
+                                                <option value='default'>--Select--</option>
+                                                <option value='FEMENINO'>FEMENINO</option>
+                                                <option value='MASCULINO'>MASCULINO</option>
+
+                                            </select><br />
+                                            <span id="spanSexoRpr" class="span-fields">El campo Sexo es
+                                                obligatorio</span>
+                                        </div>
+
+
+                                        <div class="col-sm-3" id="div-parentesco">
+                                            <label for="parentesco" id="col-form-label-parentesco">Parentesco*</label>
+
+                                            <select class="input-parentesco" id="parentesco"
+                                                [(ngModel)]="studentdetail.parentesco" name="parentescoRepr" disabled>
+                                                <option value='default'>--Select--</option>
+                                                <option value="AMIGO">AMIGO(a)</option>
+                                                <option value="MADRE">MADRE</option>
+                                                <option value="MADRINA">MADRINA</option>
+                                                <option value="PADRE">PADRE</option>
+                                                <option value="PADRINO">PADRINO</option>
+                                                <option value="TIO">TIO(a)</option>
+                                                <option value="TUTOR">TUTOR(a)</option>
+
+                                            </select>
+                                            <br />
+                                            <span id="spanParentRpr" class="span-fields">El campo Parentesco es
+                                                obligatorio</span>
+
+                                        </div>
+
+                                        <div class="col-sm-3" id="div-edo-civil">
+                                            <label for="civil" id="col-form-label-civil">Edo civil*</label>
+                                            <select class="input-civil" id="civil"
+                                                [(ngModel)]="studentdetail.representante.estadoCivil"
+                                                name="estadoCivilRepr" disabled>
+                                                <option value='default'>--Select--</option>
+                                                <option value="CASADO">CASADO</option>
+                                                <option value="CONCUBINO">CONCUBINO</option>
+                                                <option value="DIVORCIADO">DIVORCIADO</option>
+                                                <option value="SOLTERO">SOLTERO</option>
+                                                <option value="VIUDO">VIUDO</option>
+
+                                            </select><br />
+                                            <span id="spanCivilRpr" class="span-fields">El campo Edo civil es
+                                                obligatorio</span>
+
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <div class="row div-telefCorreo-Titulo">
+
+
+                                        <div class="col-sm-6 div-telef">
+                                            <label class="col-form-label" id="label-telef-rpr">Teléfono
+                                                personal*</label>
+                                        </div>
+
+
+                                        <div class="col-sm-6 div-correo">
+                                            <label class="col-form-label" id="label-correo-rpr">Correo
+                                                electrónico*</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="div-pr">
+
+                                        <div class="row div-telef-info">
+
+                                            <div class="div-operadora">
+
+                                                <select class="input-cod-operadora" id="codOperadoraRpr" disabled
+                                                    [(ngModel)]="studentdetail.representante.codigoOperadoraTelefono"
+                                                    name="codOperRpr">
+                                                    <option value='default'>-Select-</option>
+                                                    <option value='0212'>0212</option>
+                                                    <option value='0412'>0412</option>
+                                                    <option value='0414'>0414</option>
+                                                    <option value='0416'>0416</option>
+                                                    <option value='0424'>0424</option>
+                                                    <option value='0426'>0426</option>
+                                                </select>
+
+                                            </div>
+
+
+                                            <div class="div-num-tel">
+                                                <input type="text" class="input-num-tlf"
+                                                    [(ngModel)]="studentdetail.representante.telefono"
+                                                    name="telefonoRepr"
+                                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                    maxlength="7" id="textoTlfPpalRpr" disabled /><br />
+                                            </div>
+                                            <div class="div-span-Telef">
+                                                <span id="spanTelefRpr" class="span-fields">El campo Teléfono es
+                                                    obligatorio</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row1 div-correo-info">
+                                            <div id="div-email">
+
+                                                <input type="email" class="input-email" name="email" id="emailRepr"
+                                                    [(ngModel)]="studentdetail.representante.email" name="emailRepr"
+                                                    disabled /><br />
+
+                                            </div>
+                                            <div class="div-span-correo">
+                                                <span id="spanCorreoRpr"
+                                                    class="span-fields-email">Formato-Correo-OK</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="textoDirPpalRpr" class="col-form-label-dir"
+                                                id="label-dir-rpr">Dirección
+                                                domicilio*</label>
+                                            <input type="text" class="input-txtDireccion" id="textoDirPpalRpr"
+                                                name="direccion" [(ngModel)]="studentdetail.representante.direccion"
+                                                name="direccionRepr" disabled /><br />
+                                            <span id="spanDirRpr" class="span-fields">El campo Dirección domicilio es
+                                                obligatorio</span>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="row">
+                                        <div class="col-sm-4" id="divProfesion">
+                                            <label for="profesion" class="col-form-label"
+                                                id="col-label-Profesion">Profesión*
+                                            </label>
+                                            <input type="text" class="input-info-empresa" id="profesion"
+                                                name="profesion" [(ngModel)]="studentdetail.representante.profesion"
+                                                name="profesionRepr" disabled /><br />
+                                            <span id="spanProfesion" class="span-fields">El campo Profesión es
+                                                obligatorio</span>
+
+                                        </div>
+                                        <div class="col-sm-4" id="divOcupacion">
+                                            <label for="ocupacion" class="col-form-label"
+                                                id="col-label-ocupacion">Ocupación*
+                                            </label>
+                                            <input type="text" class="input-info-empresa" id="ocupacion"
+                                                name="ocupacion" [(ngModel)]="studentdetail.representante.ocupacion"
+                                                name="ocupacionRepr" disabled /><br />
+                                            <span id="spanOcup" class="span-fields">El campo Ocupación es
+                                                obligatorio</span>
+                                        </div>
+                                        <div class="col-sm-4" id="divIngresos">
+                                            <label for="ingresos" class="col-form-label"
+                                                id="col-label-Ingresos">Ingresos/mes*
+
+                                            </label>
+                                            <input type="text" class="input-info-empresa" id="ingresos" name="ingresos"
+                                                [(ngModel)]="studentdetail.representante.ingresoMensualAproximado"
+                                                name="ingresosRepr"
+                                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                maxlength="11" disabled />
+                                            <br />
+                                            <span id="spanIngre" class="span-fields">El campo Ingresos es
+                                                obligatorio</span>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-6" id="divNombreEmpresa">
+                                            <label for="empresa" class="col-form-label" id="col-label-NombEmpr">Nombre
+                                                empresa*
+                                            </label>
+                                            <input type="text" class="input-info-empresa" id="empresa" name="empresa"
+                                                [(ngModel)]="studentdetail.representante.empresaDondeTrabaja"
+                                                name="empresaRepr" disabled /><br />
+                                            <span id="spanNomEmpr" class="span-fields">El campo Nombre empresa es
+                                                obligatorio</span>
+                                        </div>
+
+                                        <div class="col-sm-6" id="divTelefEmpresa">
+
+                                            <div>
+                                                <label for="textoTlfEmprRpr" class="col-form-label"
+                                                    id="col-label-telefEmpr">Teléfono
+                                                    empresa*
+                                                </label>
+
+                                                <select class="input-cod-operadora-emp" id="codOperEmprRpr"
+                                                    [(ngModel)]="studentdetail.representante.codigoOperadoraTelefonoEmpresa"
+                                                    name="codOperEmpr" disabled>
+
+                                                    <option value='default'>-Select-</option>
+                                                    <option value='0212'>0212</option>
+                                                    <option value='0412'>0412</option>
+                                                    <option value='0414'>0414</option>
+                                                    <option value='0416'>0416</option>
+                                                    <option value='0424'>0424</option>
+                                                    <option value='0426'>0426</option>
+
+                                                </select>
+
+                                                <input type="text" class="input-num-tlf-empr"
+                                                    [(ngModel)]="studentdetail.representante.telefonoEmpresa"
+                                                    name="telefEmprRepr"
+                                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                    maxlength="7" id="textoTlfEmprRpr" disabled /><br />
+                                                <span id="spanTelefEmprRpr" class="span-fields">El campo Teléfono
+                                                    empresa es obligatorio</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="direccEmpresa" class="col-form-label-dir"
+                                                id="label-dir-empre">Dirección empresa*
+                                            </label>
+                                            <input type="text" class="input-txtDireccion" id="direccEmpresa"
+                                                name="direccionEmpresas"
+                                                [(ngModel)]="studentdetail.representante.direccionLaboral"
+                                                name="direccEmprRepr" disabled /><br />
+                                            <span id="spanDirEmprRpr" class="span-fields">El campo Dirección empresa es
+                                                obligatorio</span>
+                                        </div>
+
+                                    </div>
+
+                                    <br />
+                                    <br />
+
+                                </div>
+                            </div>
+
+                            <div class="row-curso" id="h2EditarCurso">
+                                <h2>Datos del Curso Asignado</h2>
+                            </div>
+
+
+                            <div class="card-table">
+                                <div id="contenedor" class="container mt-5 mb-5">
+                                    <div class="table-responsive">
+                                        <div class="row" id="rowtablecursos">
+                                            <table id="tablecursos" class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Id del curso</th>
+                                                        <th>Año que cursa</th>
+                                                        <th>Sección</th>
+                                                        <th>Nivel</th>
+                                                        <th>Turno</th>
+                                                        <th>Periodo académico</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+
+                                                            <select id="idCurso" disabled="true">
+
+                                                                <option>{{studentdetail.curso.id}}</option>
+
+                                                            </select>
+
+                                                        </td>
+
+                                                        <td><input type="text" id="annio"
+                                                                [(ngModel)]="studentdetail.curso.annio" name="annio"
+                                                                disabled>
+                                                        </td>
+
+
+                                                        <td><input type="text" id="seccion"
+                                                                [(ngModel)]="studentdetail.curso.seccion" name="seccion"
+                                                                disabled>
+
+                                                        </td>
+
+                                                        <td><input type="text" id="nivel"
+                                                                [(ngModel)]="studentdetail.curso.nivel" name="nivel"
+                                                                disabled>
+
+                                                        </td>
+
+                                                        <td><input type="text" id="turno"
+                                                                [(ngModel)]="studentdetail.curso.turno" name="turno"
+                                                                disabled>
+
+
+                                                        </td>
+
+                                                        <td><input type="text" id="annioescolar"
+                                                                [(ngModel)]="studentdetail.curso.periodoAcademico"
+                                                                name="annioescolar" disabled>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br /> <br />
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>

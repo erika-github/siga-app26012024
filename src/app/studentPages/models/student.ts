@@ -1,0 +1,52 @@
+export class Student{
+
+    id:string="";
+    tipoDocumento:string= "";
+    numeroDocumento:string= "";
+    primerNombre:string="";
+    segundoNombre:string="";
+    primerApellido:string="";
+    segundoApellido:string= "";
+    sexo:string="";
+    fechaNacimiento:string="";
+    edad:string= "";
+    direccion:string= "";
+    codigoOperadoraTelefono:string="";
+    telefono: string="";
+    email:string="";
+    fechaIngreso:string="";
+    lugarDeNacimiento:string="";
+    nacionalidad:string="";
+    representanteTipoDocumento:string= "";
+    representanteNumeroDocumento:string= "";
+    representantePrimerNombre:string= "";
+    representanteSegundoNombre:string= "";
+    representantePrimerApellido:string= "";
+    representanteSegundoApellido: string="";
+    representanteSexo:string= "";
+    representanteLugarDeNacimiento:string="";
+    representanteNacionalidad:string="";
+    representanteIngresoMensualAproximado:string="";
+    representanteFechaNacimieno:string= "";
+    representanteEdad:string= "";
+    representanteEstadoCivil:string= "";
+    representanteDireccion:string= "";
+    representanteEmpresaDondeTrabaja:string= "";
+    representanteDireccionLaboral:string= "";
+    representanteCodigoOperadoraTelefono:string="";
+    representanteTelefono:string= "";   
+    representanteCodigoOperadoraTelefonoEmpresa:string="";
+    representanteTelefonoEmpresa:string= "";
+    representanteEmail:string= "";  
+    representanteActivo:string="";
+    representanteProfesion:string= "";
+    representanteOcupacion:string= "";
+    parentesco:string= "";
+    cursoAnnio:string= "";
+    cursoSeccion:string= "";
+    cursoPeriodoAcademico:string= "";
+    cursoTurno:string= "";
+    cursoNivel:string= "";
+    condicion:string= ""
+   
+}

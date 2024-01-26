@@ -1,0 +1,554 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion horizontal///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+* {
+
+    font-family: Helvetica, sans-serif;
+ }
+
+
+.box-content {
+
+    
+    display: none;
+
+}
+
+.form {
+
+    background-color: #fff;
+    width: 85%;
+    max-width: 400px;
+    padding: 3.5em 2.8em;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+    text-align: center;
+    position: absolute;
+    top: 134px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    position: fixed;
+    z-index: 2000;
+
+}
+
+
+.form_tittle {
+
+    font-size: 2rem;
+    margin-bottom: .5em;
+
+
+}
+
+
+.form_paragraph {
+
+    font-weight: 300;
+}
+
+.form_link {
+
+    font-weight: 400;
+    color: black;
+
+}
+
+.form_container {
+
+    margin-top: 3em;
+    display: grid;
+    gap: 4.5em;
+
+}
+
+
+.form_group {
+
+    position: relative;
+    --color: #5757577e;
+
+}
+
+
+.form_input:focus+.form_label,
+.form_input:not(:placeholder-shown)+.form_label {
+
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;   
+    
+
+}
+
+
+.form_input {
+
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+
+}
+
+
+
+.form_label {
+
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+
+.form_submit {
+
+    background-color:#3f9ccf;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+    transition: box-shadow 0.5s ease-in-out;
+    border: none;
+
+}
+
+
+.form_submit:hover {
+  
+    box-shadow: 0 0 40px 40px #3f9ccf inset;
+    color: white;
+}
+
+
+.form_line {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .8px; 
+    background-color:#3f9ccf;
+    transform: scale(0);
+    transform: left bottom;
+
+}
+
+
+.form_input:focus~.form_line,
+.form_input:not(:placeholder-shown)~.form_line {
+
+    transform: scale(1);
+}
+
+
+.form_input:not(:placeholder-shown) {
+
+    color: #4d4646;
+
+}
+
+
+.form_paragraph {
+
+    text-align: center;
+
+}
+
+
+
+#cerrar {
+
+    cursor: pointer;
+    position: absolute;
+    right: auto;
+    right: 3%;
+    top: 2%;
+    text-align: right;
+
+}
+
+#cerrar:hover, #cerrar_:hover {
+
+    color: red;
+}
+
+
+#cerrar_ {
+
+    display: none;
+    cursor:pointer;
+}
+
+
+#errorUsuario {
+
+    font-size: 14px;
+}
+
+#errorPassword {
+
+    font-size: 14px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:landscape) {
+
+    .box-content {
+       
+        top: 11%; 
+        width:70%;      
+
+    }
+
+    .form {
+
+        top: 14%;        
+        z-index: 2000;       
+        width:70%;       
+        border-radius: 8px;
+
+    }    
+
+    .form_submit {
+
+        font-size: 16px;
+
+    }
+
+    #user{
+
+        font-size: 16px
+
+    }
+
+    #password{
+
+        font-size: 16px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 950px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:950px) and (orientation:landscape) {
+
+    .box-content {
+
+        background:#fff;
+        top: 25%;
+        height:60%; 
+        max-width:400px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 2000;
+        margin:auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+
+    }
+
+
+    .form {
+
+        top: 28%;
+        padding: 1.5em 2.8em;
+        height: 55%;
+        overflow-y: scroll;    
+        box-shadow: none
+
+    }
+
+    .form_container {
+
+        gap: 2.5em;
+
+    }
+
+    .form_label {
+
+        font-size: 14px;
+    }
+
+    .form_tittle {
+
+        font-size: 1.5em;
+
+    }
+
+    .form_paragraph {
+
+        font-size: 14px;
+    }
+
+    .form_submit {
+
+        font-size: 14px;
+
+    }
+
+    #cerrar_ {
+
+        font-size: 14px;
+        color:#ACACAC;
+        margin-top: 4%;
+        
+    }
+
+    #user{
+
+        font-size: 14px
+
+    }
+
+    #password{
+
+        font-size: 14px;
+
+    }
+
+    #cerrar_ {
+
+        display: block;
+    }
+
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 480px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:480px) and (orientation:landscape) {
+
+
+    .box-content {
+
+        width: 70%;
+     
+
+    }
+
+    .form_container {
+
+
+        gap: 1.2em;
+
+    }
+
+    .form {
+
+        width: 70%;
+        padding: 1.5em 2.8em;
+       
+    }
+
+    .form_label {
+
+        font-size: 12px;
+    }
+
+    .form_tittle {
+
+        font-size: 1.5em;
+
+    }
+
+
+    .form_paragraph {
+
+        font-size: 12px;
+    }
+
+
+    .form_submit {
+
+        font-size: 12px;
+
+    }
+
+    #cerrar_ {
+
+        font-size: 12px;
+
+    }
+
+   
+    #errorUsuario {
+
+        font-size: 12px;
+    }
+
+    #errorPassword {
+
+        font-size: 12px;
+    }
+
+    #user{
+
+        font-size: 12px
+
+    }
+
+    #password{
+
+        font-size: 12px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:landscape) {
+
+    .form_tittle {
+
+        font-size: 1.2em;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 450px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:450px) and (orientation:portrait) {
+
+    .form{
+        top:100px;
+    }
+
+
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 400px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:400px) and (orientation:portrait) {
+
+    .form {
+
+        top: 100px;
+        padding: 2.5em 2.8em;
+    }
+
+    .form_label {
+
+        font-size: 12px;
+    }
+
+    .form_tittle {
+
+        font-size: 1.5em;
+
+    }
+
+
+    .form_paragraph {
+
+        font-size: 12px;
+    }
+
+
+    .form_submit {
+
+        font-size: 12px;
+
+    }
+
+    .form_container {
+
+
+        gap: 2.5em;
+
+    }
+
+    #errorUsuario {
+
+        font-size: 12px;
+    }
+
+    #errorPassword {
+
+        font-size: 12px;
+    }
+
+    #user{
+
+        font-size: 12px
+
+    }
+
+    #password{
+
+        font-size: 12px;
+
+    }
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:portrait) {
+
+    .form {
+
+        top:80px;
+        padding: 2em 2.8em;
+
+    }
+
+
+    .form_tittle {
+
+        font-size: 1em;
+
+    }
+
+
+    .form_container {
+
+
+        gap: 2em;
+
+    }
+
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 250px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:250px) and (orientation:portrait) {
+
+    .form {
+
+        top:10px;
+        padding: 1em 2.8em;
+
+    }
+
+    .form_container {
+
+
+        gap: 1em;
+
+    }
+
+}

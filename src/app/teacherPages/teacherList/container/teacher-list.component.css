@@ -1,0 +1,199 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion horizontal///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+* {
+
+    font-family: Helvetica, sans-serif;
+  
+  
+  }
+  
+  .tdIcons {
+  
+    text-align: center
+  }
+  
+  .faIcons {
+  
+    color: #2F5597;
+    cursor: pointer
+  }
+  
+  .card {
+  
+    border: none;
+    background: whitesmoke
+  }
+  
+  #contenedor {
+  
+    min-height: 100vh
+  }
+  
+  
+  h1 {
+  
+    background-color: #E1E1E3;
+    margin-top: -10px;
+  
+  }
+  
+  #div-icons{
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .icons {  
+   
+    opacity: 0.7;
+  }
+  
+  .icons:hover{
+  
+    opacity: 1
+  }
+  
+  
+  #home,
+  #addTeacher {
+  
+    color: #2F5597;
+  
+  }
+  
+  #goOut {
+    color: red;
+  
+  }
+  
+  
+  #home,
+  #addTeacher,
+  #goOut {
+  
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer
+  }
+  
+  .columns, .data{
+    text-align: center;
+  }
+
+  
+  
+  
+  .columns #annio {
+  
+    width: 150px;
+  }
+  
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 800px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
+  @media only Screen and (max-width:800px) and (orientation:landscape) {
+  
+    * {
+  
+      font-size: 14px
+    }
+  
+    #home,
+    #addTeacher,
+    #goOut {
+  
+      font-size: 16px;
+  
+  
+    }
+  
+  }
+  
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 640px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
+  @media only Screen and (max-width:640px) and (orientation:landscape) {
+  
+    * {
+  
+      font-size: 13px
+    }
+  
+  
+    #home,
+    #addTeacher,
+    #goOut {
+  
+      font-size: 16px;
+      margin-right: 10px;
+  
+    }
+  
+    #datatableexample {
+  
+      font-size: 12px;
+  
+    }
+  
+  
+  }
+  
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 800px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
+  @media only Screen and (max-width:800px) and (orientation:portrait) {
+  
+  
+  
+    #icons {
+  
+      margin-bottom: 40px;
+  
+    }
+  
+    #home,
+    #addTeacher,
+    #goOut {
+  
+      font-size: 20px;
+      margin-right: 15px;
+  
+    }
+  
+  }
+  
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 650px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
+  @media only Screen and (max-width:640px) and (orientation:portrait) {
+  
+  
+  
+    #datatableexample {
+  
+      font-size: 12px;
+    }
+  
+  
+  }
+  
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 412px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
+  @media only Screen and (max-width:412px) and (orientation:portrait) {
+  
+    * {
+  
+      font-size: 12px;
+  
+    }
+  
+    #home,
+    #addTeacher,
+    #goOut {
+  
+      font-size: 15px;
+      margin-right: 10px;
+  
+    }
+  
+  }

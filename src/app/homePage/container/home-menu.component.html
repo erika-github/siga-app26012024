@@ -1,0 +1,140 @@
+  
+<div id="background">  
+
+    <div class="loginImage">
+
+        <div class="menuH">
+            <fa-icon [icon]="faBars"></fa-icon>
+        </div>
+
+        <div id="menuMobile">
+
+            <ul id="menuMobList">
+
+                <div><img src="assets/images/usuario.png"></div>
+                <div id="menuMobLogin">Hola, Director(a)</div>               
+                <li id="people">Personas<fa-icon [icon]="faChevronRight" class="chevronRight"></fa-icon></li>            
+                <li id="setting">Configuración<fa-icon [icon]="faChevronRight" class="chevronRight"></fa-icon></li>                
+                <li id="ratings">Calificaciones<fa-icon [icon]="faChevronRight" class="chevronRight"></fa-icon></li>              
+                <li id="security">Seguridad<fa-icon [icon]="faChevronRight" class="chevronRight"></fa-icon></li>               
+                <li class="linea"><fa-icon [icon]="faPencil" class="profileIMob"></fa-icon>Editar Perfil</li>                
+                <li><fa-icon [icon]="faArrowUpRightFromSquare" class="profileIMob"></fa-icon>Cerrar sesión</li>
+
+            </ul>
+
+        </div>
+
+
+        <div id="subM_MobPeople">
+
+            <ul class="menuMobSubList">
+
+             
+                <li class="menuMobBlue">
+                    <fa-icon [icon]="faChevronLeft" class="chevronLeft" id="chevronLeftP"></fa-icon>Menú</li>
+                    <a class= "link_" [routerLink]="['/sigaStudentPage']" routerLinkActive="active">
+                    <li>Alumnos</li></a>
+                    <a class= "link_" [routerLink]="['/sigaTeacherPage']" routerLinkActive="active">
+                    <li>Docentes</li></a>
+
+            </ul>
+
+        </div>
+
+        <div id="subM_MobSetting">
+
+            <ul class="menuMobSubList">
+
+              
+                <li class="menuMobBlue"><fa-icon [icon]="faChevronLeft" class="chevronLeft" id="chevronLeftS"></fa-icon>Menú</li>
+                <li>Materias y Cursos</li>
+                <li>Cursos Activos</li>
+                <li>Maestro de Materia</li>
+                <li>Maestro de Período</li>
+
+            </ul>
+
+        </div>
+
+        <div id="subM_MobRatings">
+
+            <ul class="menuMobSubList">
+
+                
+                <li class="menuMobBlue"><fa-icon [icon]="faChevronLeft" class="chevronLeft" id="chevronLeftR"></fa-icon>Menú</li>
+                <li>Consultar Calificaciones</li>
+
+
+            </ul>
+
+        </div>
+
+        <div id="subM_MobSecurity">
+
+            <ul class="menuMobSubList">
+                
+                <li class="menuMobBlue"><fa-icon [icon]="faChevronLeft" class="chevronLeft" id="chevronLeftSe"></fa-icon>Menú</li>
+                <li>Usuarios</li>
+                <li>Cambiar Clave</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <img id="sImage" src="assets/images/siga.png" alt="">   
+    <div id="perfil">       
+            <ul id="perfilList">           
+            <li><fa-icon [icon]="faUser" class="profileIcons"></fa-icon>Hola, Director(a)</li>
+            <li><fa-icon [icon]="faPencil" class="profileIcons"></fa-icon>Editar Perfil</li>            
+            <li><fa-icon [icon]="faArrowUpRightFromSquare" class="profileIcons"></fa-icon>Cerrar Sesión</li>
+
+        </ul>
+    </div>
+
+    <div><img id="cinta" src="assets/images/cinta_azul_.png" alt=""></div>
+    <div><img id="cintaMobile" src="assets/images/cinta_azul_M2.png" alt=""></div>
+    
+    
+
+    <div class="mMultinivel">
+        <ul class="menu"  >
+                      
+
+            <li class="items"><fa-icon [icon]="faUserGroup" class="menuIcons"></fa-icon>Personas
+                <ul class="subElements" id="subE1"> 
+                                    
+                        <a [routerLink]="['/sigaStudentPage']" routerLinkActive="active">    
+                        <li>Alumnos</li></a> 
+
+                        <a [routerLink]="['/sigaTeacherPage']" routerLinkActive="active" >
+                        <li>Docentes</li></a>                   
+                    
+                </ul>
+            </li>
+            <li class="items"><fa-icon [icon]="faGear" class="menuIcons"></fa-icon>Configuración
+                <ul class="subElements" id="subE2">
+                    <li>Materias y Cursos</li>
+                    <li>Cursos Activos</li>
+                    <li>Maestro de Materias</li>
+                    <li>Maestro de Períodos</li>
+                </ul>
+            </li>
+            <li class="items"><fa-icon [icon]="faFolderOpen" class="menuIcons"></fa-icon>Calificaciones
+                <ul class="subElements" id="subE3">
+                    <li>Consultar</li>                   
+
+                </ul>
+            </li>
+
+            <li class="items"><fa-icon [icon]="faLock" class="menuIcons"></fa-icon>Seguridad
+                <ul class="subElements" id="subE4">
+                    <li>Usuarios</li>
+                    <li>Cambiar clave</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="fondoMobile"></div>
+
+</div>

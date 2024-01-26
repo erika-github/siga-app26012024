@@ -1,0 +1,27 @@
+
+#headband{
+    width:100%;
+}
+
+#headbandPortrait{
+    display:none;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:portrait) {
+
+
+    #headbandPortrait{
+
+        width: 100%;
+        display:block;
+    }
+
+    #headband{
+
+        display:none
+    }
+
+
+}

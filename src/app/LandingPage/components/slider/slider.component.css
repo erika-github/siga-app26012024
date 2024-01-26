@@ -1,0 +1,239 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion horizontal///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+ul,
+ol {
+
+    list-style: none;
+}
+
+
+#portrait{
+
+    display:none;
+}
+
+
+#play {
+
+    width:10%;
+    position: absolute;
+    top: 40%;
+    left: 44.5%;
+    z-index: 500;
+    display: none;
+    margin: auto;
+   
+
+}
+
+
+.slider{
+
+    padding-left: 0px;
+}
+
+
+
+
+.slideShow {
+
+    width: 100%;
+    position: relative;   
+
+}
+
+
+
+
+.slider li,
+ul {
+
+    width: 100%;
+
+}
+
+
+.slider li img {
+
+    width: 100%;
+
+}
+
+
+
+.slider li video {
+
+    width: 100%;
+
+}
+
+
+.pagination{
+        
+    position:absolute;
+    top:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    
+        
+}
+    
+.pagination li{
+        
+    color:#7f7679;
+    margin:2px 5px;		
+    cursor:pointer;
+    
+        
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1390px - Horizontal+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1390px) and (orientation:landscape) {
+
+    .pagination span {
+
+        font-size: 20px;
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1350px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1350px) and (orientation:landscape) {
+
+    .pagination span {
+
+        font-size: 15px;
+
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 790px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:790px) and (orientation:landscape) {
+
+    .pagination span {
+
+        font-size: 14px;
+
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion Vertical///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:portrait) {
+
+    .pagination span {
+
+        font-size: 18px;
+
+    }
+
+    #landscape{
+
+        display:none
+    }
+
+    #portrait{
+
+        display:block
+    }
+
+
+
+    .slider_{
+
+        padding-left: 0px;
+    }        
+       
+    
+    .slider_ li,
+    ul {
+    
+        width: 100%;
+    
+    }
+    
+       
+    .slider_ li img {
+    
+        width: 100%;
+    
+    }
+    
+       
+      .slider_ li video {
+    
+        width: 100%;
+    
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 912px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:912px) and (orientation:portrait) {
+
+    .pagination span {
+
+        font-size: 18px;
+       
+
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 750px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:750px) and (orientation:portrait) {
+
+    .pagination span {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 650px - Vertical  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:650px) and (orientation:portrait) {
+
+    .pagination span {
+
+        font-size: 13px;
+        
+    }
+    
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 420px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:420px) and (orientation:portrait) {
+
+    .pagination span {
+        font-size: 11px;
+                
+    }
+
+
+
+}
+
+
+    
+    

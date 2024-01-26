@@ -1,0 +1,78 @@
+            
+<div class="card">
+    <div id="contenedor" class="container mt-5 mb-5">
+  
+      <div id="div-icons">
+  
+        <div>
+          <a [routerLink]="['/sigaHomePage']">
+            <fa-icon [icon]="faHouse" title="Home" class="icons" Id="home" ></fa-icon>
+          </a>
+        </div>
+      
+  
+        <div>
+          <fa-icon [icon]="faCircleXmark" title="Salir" class="icons" id="goOut"></fa-icon>
+        </div>
+        
+
+        <div>  
+          <a [routerLink]="['/sigaCreateTeacher']">
+            <fa-icon [icon]="faUserPlus" title="Agregar Docente"  class="icons" id="addTeacher" ></fa-icon></a> 
+        </div>
+  
+      </div>
+
+      <br />  
+
+        <!--<div class="row-repr " style="text-align:center; color: #2F5597">
+
+          <h2>Listado de Docentes</h2>
+
+        </div>
+
+        <br />  
+        <br /> -->
+  
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+          <thead>
+            <tr>
+              <th class="columns">Id</th>
+              <th class="columns">Cédula de identidad</th>
+              <th class="columns">Nombre y apellido</th>              
+              <th class="columns">Especialidad</th>
+              <th class="columns">Detalle</th>
+              <th class="columns">Editar</th>
+              <th class="columns">Borrar</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+            <tr *ngFor="let group of data">
+              <td class="data">{{group.id}}</td>
+              <td class="data">{{group.tipoDocumento+' '+group.numeroDocumento}}</td>
+              <td class="data">{{group.primerNombre +' '+group.primerApellido}}</td>
+              <td class="data">{{group.asignaturasEspecializadas}}</td>
+              
+              <td class="tdIcons"><a [routerLink]="['/sigaTeacherDetail', group.id]">
+                  <fa-icon [icon]="faEye" class="faIcons"></fa-icon></a>
+              </td>
+  
+              <td class="tdIcons"><a [routerLink]="['/sigaEditTeacher', group.id]">
+                  <fa-icon [icon]="faPencil" class="faIcons"></fa-icon></a>
+              </td>  
+
+              <td class="tdIcons">
+                  <fa-icon [icon]="faTrashCanArrowUp" class="faIcons"  (click)="teacherDeactivacion(group.id)"></fa-icon>                
+              </td>
+
+            </tr>
+          
+          </tbody>
+        
+        </table>
+        
+      </div>
+    </div>
+  </div>

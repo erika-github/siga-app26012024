@@ -1,0 +1,14 @@
+
+{
+
+  "/siga" : {
+       
+        "target":"https://sea-lion-app-4pnm8.ondigitalocean.app",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug"
+
+    }
+
+
+}

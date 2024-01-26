@@ -1,0 +1,669 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion horizontal///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+nav {
+
+    width: 100%;
+
+}
+
+.listMenu {
+
+    display: flex;
+    flex-direction: row;
+    background-image: url("/assets/images/gradientBack.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    margin-bottom: 0px;
+
+}
+
+.listMenu :nth-child(1) {
+    order: 1;
+}
+
+.listMenu :nth-child(2) {
+    order: 2;
+}
+
+.listMenu :nth-child(3) {
+    order: 3;
+}
+
+.listMenu :nth-child(4) {
+    order: 4;
+}
+
+.listMenu :nth-child(5) {
+    order: 5;
+}
+
+.menu-fixed {
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+}
+
+#stickyMenu {
+
+    display: none;
+}
+
+#mainMenu ul,
+#stickyMenu ul {
+
+
+    list-style: none;
+
+}
+
+
+#mainMenu ul li a:hover,
+#stickyMenu ul li a:hover {
+
+
+    font-size: 21px;
+
+
+}
+
+
+#mainMenu ul li,
+#stickyMenu ul li {
+
+    width: 30%;
+
+}
+
+#mainMenu ul li a {
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 12%;
+    padding-bottom: 55px;
+    font-size: 20px;
+
+}
+
+#stickyMenu ul li a {
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 12%;
+    padding-bottom: 55px;
+    font-size: 20px;
+
+}
+
+
+#mainMenu ul li a span {
+
+    border: 1px solid white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 7px;
+
+}
+
+#stickyMenu ul li a span {
+
+    border: 1px solid white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: white;
+
+}
+
+
+#stickyMenu .listMenu {
+
+    opacity: 0.8;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1390px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1390px) and (orientation:landscape) {
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 80%;
+    }
+
+    #mainMenu ul li,
+    a #stickyMenu ul li a {
+
+        font-size: 25px;
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 25px;
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 26px;
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1350px - Horizontal  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1350px) and (orientation:landscape) {
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 80%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 20px;
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 21px;
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 20px;
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 790px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:790px) and (orientation:landscape) {
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 100%;      
+        height: 70px
+
+    }
+
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+    
+        font-size: 17px;
+        padding-top: 25px;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+  
+        font-size: 17px
+
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 18px
+
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 650px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:650px) and (orientation:landscape) {
+
+    
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        height: 65px;         
+        
+
+    }
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 15px;
+
+    }
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 14px;       
+        padding-top: 20%;
+       
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 14px;
+
+    }
+
+    
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:landscape) {
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        height: 40px;
+
+    }
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+
+        font-size: 9px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 8px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 8px;
+
+    }
+
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion Vertical///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:portrait) {
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 120px;
+
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 26px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 25px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 25px;
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 912px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:912px) and (orientation:portrait) {
+
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 100px;
+
+    }
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 21px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 20px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 20px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 750px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:750px) and (orientation:portrait) {
+
+    
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 70px;
+
+    }
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 15px;
+       
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+         font-size: 14px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+   
+        font-size: 14px;
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 650px - Vertical  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:650px) and (orientation:portrait) {
+
+    
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 70px;
+      
+
+    }
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 15px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 14px;
+        padding-top: 20%;
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        border: 1px solid white;
+        color: white;
+        font-size: 14px;
+
+    }
+
+   
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 420px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:420px) and (orientation:portrait) {
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 60px;
+
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 12px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 11px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 11px;
+
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:portrait) {
+
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 40px;
+
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 9px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 8px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 8px;
+
+    }
+
+    
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 150px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:170px) and (orientation:portrait) {
+
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        list-style: none;
+        height: 25px;
+
+    }
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+        font-size: 6.5px;
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+        font-size: 6px;
+        padding-top: 20%;
+
+    }
+
+    #mainMenu ul li a span,
+    #stickyMenu ul li a span {
+
+        font-size: 6px;
+
+    }
+
+}

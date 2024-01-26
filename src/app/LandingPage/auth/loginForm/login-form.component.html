@@ -1,0 +1,33 @@
+
+<div class="box-content">
+
+    <form (ngSubmit)="validation() " class="form" id="formulario">    
+            
+        <p id="cerrar">X</p>
+        <h2 class="form_tittle">Inicia Sesión</h2>
+        <p class="form_paragraph"> ¿Aún no tienes una cuenta?<br /><a href="#" class="form_link">Entra Aquí</a></p>
+
+        <div class="form_container">
+
+            <div class="form_group">
+                <input type="text" id="user" class="form_input" [(ngModel)]="user.usuario" name="usuario"
+                    placeholder=" ">               
+                <label for="user" class="form_label" id="us">Usuario:</label>
+                <span class="form_line"></span>
+                <span id="errorUsuario"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="password" id="password" class="form_input" placeholder=" " [(ngModel)]="user.clave"
+                    name="clave">                
+                <label for="password" class="form_label" id="ps">Contraseña:</label>
+                <span id="form_l" class="form_line"></span>
+                <span id="errorPassword"></span>
+            </div>
+            <input type="submit" class="form_submit" value="Entrar">
+        </div>
+        <div id="cerrar_">Cerrar (X)</div>
+    </form>
+</div>
+
+

@@ -1,0 +1,1913 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion horizontal///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+
+    font-family: Helvetica, sans-serif;
+}
+
+
+#login {
+
+    padding-top: 6%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
+}
+
+#iniciar {
+
+    text-align: center;
+
+}
+
+#iniciar h1 {
+
+    font-size: 25px;
+    margin: 80px 0px 160px 0px;
+    color: #246BAC;
+    font-weight: bold;
+
+}
+
+#iniciar div {
+
+    border: 2px solid #246BAC;
+    padding: 1.5%;
+    border-radius: 7px;
+    width: 15%;
+    margin: auto;
+}
+
+#iniciar span {
+
+    font-size: 22px;
+    color: #246BAC;
+}
+
+#iniciar div:hover {
+
+    font-weight: bold;
+    border: 3px solid #246BAC;
+    cursor: pointer;
+}
+
+
+#aboutUs {
+
+    padding-top: 5%;
+
+}
+
+#quienesSomos {
+
+
+    background-image: url('/assets/images/img_QuinesSomos_.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    border: 3px solid #D1DBE0;
+    margin-right: 3%;
+    margin-left: 3%;
+
+
+}
+
+#quienesSomos h2 {
+
+    padding-left: 6%;
+    font-size: 30px;
+    padding-top: 100px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#quienesSomos p {
+
+    margin-left: 30px;
+    padding: 40px 40px 40px 30px;
+    width: 48%;
+    color: white;
+    font-size: 25px;
+}
+
+
+#approach {
+
+    margin-top: 10%;
+    padding-top: 5%;
+
+}
+
+#enfoque {
+
+
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px dashed #3F9ED4;
+    background-color: #D1DBE0;
+
+
+}
+
+
+
+#enfoque div {
+
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+#enfoque div p {
+
+    text-align: center;
+    font-size: 18px;
+    color: #246BAC;
+
+}
+
+#enfoque div h2 {
+
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #246BAC;
+
+}
+
+#enfoque div span {
+
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#features {
+
+    padding-top: 5%;
+    margin-top: 10%;
+}
+
+#caracteristicas {
+
+    background-image: url("/assets/images/img_CaractSistemas.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 850px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+#caracteristicas p {
+
+    padding: 8% 5% 3% 3%;
+    width: 50%;
+    position: absolute;
+    left: 33%;
+    font-size: 26px;
+    color: #246BAC;
+    font-weight: bold;
+
+
+}
+
+
+#office {
+
+    padding-top: 5%;
+    margin-top: 10%;
+
+}
+
+#oficina {
+
+    background-image: url('/assets/images/img_Office.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    height: 700px;
+
+}
+
+
+
+#oficina h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 6%;
+
+
+}
+
+
+#oficina p {
+
+    padding: 20px 20px 0px 20px;
+
+}
+
+#oficina p:nth-child(2) {
+
+    text-align: center;
+
+}
+
+#oficina div p:first-child {
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#oficina #direccion {
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+div span {
+
+    font-size: 30px;
+    color: #246BAC;
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1390px - Horizontal+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1390px) and (orientation:landscape) {
+
+    #iniciar h1 {
+
+        font-size: 26px;
+        margin: 60px 20px 60px 20px;
+
+    }
+
+
+
+    #iniciar span {
+
+
+        font-size: 21px;
+
+    }
+
+
+    #quienesSomos {
+
+        background-position: left;
+        background-attachment: unset;
+        background-size: 130%;
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 28px;
+        padding-top: 9%;
+    }
+
+    #quienesSomos p {
+
+        width: 50%;
+        color: white;
+        font-size: 26px;
+        margin-left: 0%;
+        padding-left: 3%;
+
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+
+    #enfoque div {
+
+        margin: 0px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #enfoque div p {
+
+        font-size: 25px;
+        margin: 5%;
+    }
+
+    #enfoque div h2 {
+
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 29px;
+
+    }
+
+    #enfoque div span {
+
+        text-align: center;
+        margin-bottom: 6%;
+        font-size: 32px;
+
+    }
+
+
+    #caracteristicas {
+
+        background-size: 100%;
+        height: 700px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        padding-top: 8%;
+        left: 25%;
+        width: 65%;
+        font-size: 25px;
+
+    }
+
+
+    #oficina {
+
+        background-size: 100%;
+        background-attachment: unset;
+        height: 550px;
+
+    }
+
+
+    #oficina p {
+
+        font-size: 25px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 27px;
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 25px;
+
+    }
+
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1350px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1350px) and (orientation:landscape) {
+
+    #iniciar h1 {
+
+        font-size: 21px;
+
+    }
+
+    #iniciar div {
+
+        width: 20%;
+    }
+
+    #iniciar span {
+
+        font-size: 21px;
+
+    }
+
+
+    #quienesSomos {
+
+
+        background-position: left;
+        background-attachment: unset;
+        background-size: 130%;
+
+
+    }
+
+    #quienesSomos h2 {
+
+
+        font-size: 24px;
+
+    }
+
+    #quienesSomos p {
+
+        font-size: 21px;
+        width: 70%;
+
+    }
+
+
+
+    #enfoque {
+
+        margin: 2%;
+    }
+
+    #enfoque div p {
+
+
+        font-size: 20px;
+        margin: 5%;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 22px;
+    }
+
+    #enfoque div span {
+
+        font-size: 24px;
+
+    }
+
+
+    #caracteristicas {
+
+
+        background-size: 100%;
+        height: 575px;
+        border: 1px solid lightgray;
+        background-position: center;
+
+    }
+
+
+    #caracteristicas p {
+
+        padding-top: 8%;
+        left: 25%;
+        width: 65%;
+        font-size: 20px;
+
+    }
+
+
+    #oficina {
+
+        background-size: 160%;
+        background-position: right 30%;
+        background-attachment: unset;
+
+
+    }
+
+    #oficina p {
+
+        font-size: 19px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 23px;
+
+    }
+
+    #oficina div p:first-child {
+
+        font-size: 20px;
+
+    }
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 812px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:812px) and (orientation:landscape) {
+
+
+
+    #iniciar h1 {
+
+        font-size: 18px;
+      
+    }
+
+    #iniciar div {
+
+        width: 20%;
+    }
+
+    #iniciar span {
+
+        font-size: 17px;
+    }
+
+
+
+    #quienesSomos {
+
+
+        background-attachment: unset;
+        background-size: 130%;
+
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 18px;
+
+
+    }
+
+    #quienesSomos p {
+
+        width: 60%;
+        color: white;
+        font-size: 15px;
+        margin-left: 0%;
+        padding-left: 3%;
+        font-size: 18px
+    }
+
+
+
+    #enfoque div p {
+
+        font-size: 18px
+    }
+
+    #enfoque div h2 {
+        
+        font-size: 20px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 23px;
+
+    }
+
+
+    #mainMenu ul,
+    #stickyMenu ul {
+
+        height: 75px;
+
+    }
+
+
+
+    #mainMenu ul li a:hover,
+    #stickyMenu ul li a:hover {
+
+
+        font-size: 18px;
+
+
+    }
+
+
+    #mainMenu ul li,
+    #stickyMenu ul li {
+
+        width: 30%;
+        padding-left: 3%;
+        padding-right: 4%;
+        padding-top: 0.5%;
+
+
+    }
+
+    #mainMenu ul li a,
+    #stickyMenu ul li a {
+
+
+        font-size: 17px;
+        padding-top: 20%;
+
+
+    }
+
+    #mainMenu ul li a span {
+
+
+        font-size: 17px;
+
+    }
+
+    #stickyMenu ul li a span {
+
+
+        font-size: 17px;
+
+    }
+
+
+
+    #caracteristicas {
+
+
+        background-size: 100%;
+        height: 405px;
+        border: 1px solid lightgray
+    }
+
+
+    #caracteristicas p {
+
+        left: 25%;
+        width: 70%;
+        font-size: 18px;
+
+    }
+
+
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 500px;
+
+    }
+
+
+    #oficina p {
+
+       /* font-size: 14px;*/
+       font-size: 17px
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 17px;
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 17px;
+
+    }
+
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 660px - Horizontal  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:660px) and (orientation:landscape) {
+
+    #iniciar h1 {
+
+        font-size: 14px;
+     
+    }
+
+    #iniciar span {
+
+        font-size: 13px;
+      
+
+    }
+
+
+    #quienesSomos {
+
+        height: auto;
+        background-attachment: unset;
+        background-size: 160%;
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 16px;
+        padding-top: 10%;
+
+    }
+
+    #quienesSomos p {
+
+        font-size: 13px;
+        width: 60%;
+
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+
+
+    #enfoque div p {
+
+
+        font-size: 12px;
+
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 16px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 18px;
+
+    }
+
+
+
+    #caracteristicas {
+
+
+        background-size: 108%;
+        height: 405px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 25%;
+        width: 65%;
+        font-size: 14px;
+
+    }
+
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 370px;
+
+    }
+
+
+    #oficina p {
+
+        font-size: 14px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 17px;
+
+    }
+
+
+    #oficina div p:first-child {
+
+        font-size: 14px;
+
+    }
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:landscape) {
+
+    #iniciar h1 {
+
+        font-size: 10px;
+
+    }
+
+    #iniciar div {
+
+        width: 28%
+    }
+
+
+    #iniciar span {
+
+        font-size: 9px;
+    }
+
+
+
+    #quienesSomos {
+
+        height: auto;
+        background-attachment: unset;
+        background-size: 172%;
+
+    }
+
+    #quienesSomos h2 {
+
+        padding-left: 5%;
+        font-size: 12px;
+        padding-top: 20%;
+    }
+
+    #quienesSomos p {
+
+        width: 100%;
+        font-size: 10px;
+        padding-left: 3%;
+        padding-top: 5%;
+
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+    #enfoque div p {
+
+
+        font-size: 8px;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 12px;
+        margin-bottom: 12px;
+
+    }
+
+    #enfoque div span {
+
+        text-align: center;
+        margin-bottom: 6%;
+        font-size: 14px;
+    }
+
+
+
+    #caracteristicas {
+
+        background-size: 105%;
+        height: 200px;
+        border: 1px solid lightgray;
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 10px;
+
+    }
+
+
+    #oficina {
+
+        background-size: 280%;
+        background-attachment: unset;
+        background-position: center;
+
+    }
+
+
+    #oficina p {
+
+        font-size: 8px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 10px;
+
+    }
+
+
+    #oficina div p:first-child {
+
+        font-size: 9px;
+
+    }
+
+
+
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////INICIO - Posicion Vertical///////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:portrait) {
+
+
+    #iniciar h1 {
+
+        font-size: 25px;
+        margin: 60px 20px 60px 20px;
+
+    }
+
+    #iniciar div {
+
+        width: 20%;
+
+    }
+
+    #iniciar span {
+
+        font-size: 25px;
+    }
+
+
+    #quienesSomos {
+
+
+        background-position: left 30%;
+        background-attachment: unset;
+        background-size: 120%;
+
+    }
+
+    #quienesSomos h2 {
+
+        padding-left: 6%;
+        font-size: 25px;
+    }
+
+    #quienesSomos p {
+
+        width: 60%;
+        font-size: 23px;
+
+    }
+
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+
+
+    #enfoque div p {
+
+        font-size: 20px;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 22px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 25px;
+
+    }
+
+
+
+    #caracteristicas {
+
+        background-size: 143%;
+        height: 650px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 23px;
+        padding-top: 15%;
+
+    }
+
+
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 500px;
+
+    }
+
+
+    #oficina p {
+
+        font-size: 25px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 27px;
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 26px;
+        margin-bottom: 0px;
+
+    }
+
+    #oficina div p:nth-child(2) {
+
+        margin-bottom: 0px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 912px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:912px) and (orientation:portrait) {
+
+    #iniciar h1 {
+
+        font-size: 20px;     
+
+    }
+
+
+    #iniciar span {
+
+        font-size: 20px;
+    }
+
+
+
+    #quienesSomos {
+
+
+        background-position: left 30%;       
+        background-attachment: unset;
+        background-size: 130%;
+
+    }
+
+    #quienesSomos h2 {
+
+        padding-left: 3%;
+        font-size: 22px;
+        padding-top: 5%;
+
+    }
+
+    #quienesSomos p {
+
+        font-size: 20px;
+        margin-left: 0%;
+        padding-left: 3%;
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+
+    #enfoque div {
+
+        margin: 0px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #enfoque div p {
+
+
+        font-size: 20px;
+        margin: 5%;
+
+    }
+
+    #enfoque div h2 {
+
+        margin-bottom: 30px;
+        font-size: 22px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 25px;
+
+    }
+
+
+
+    #caracteristicas {
+
+        background-size: 150%;
+        height: 600px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 20px;
+
+    }
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 400px;
+
+    }
+
+
+
+    #oficina p {
+
+        font-size: 20px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 22px;
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    #oficina div p:nth-child(2) {
+
+        margin-bottom: 0px;
+    }
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 750px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:750px) and (orientation:portrait) {
+
+
+
+    #iniciar h1 {      
+        font-size: 17px;       
+    }
+
+    #iniciar div {
+
+        width: 23%;
+
+    }
+
+    #iniciar span {
+     
+        font-size: 14px;
+        
+        
+    }
+
+    #quienesSomos {
+
+
+        background-position: left 30%;
+        background-attachment: unset;
+        background-size: 130%;
+
+
+    }
+
+    #quienesSomos h2 {
+
+
+        font-size: 20px;
+        padding-top: 5%;
+        padding-left: 6%;
+
+    }
+
+    #quienesSomos p {
+
+        font-size: 17px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+
+
+    }
+
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+
+
+    #enfoque div p {
+
+        font-size: 17px;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 20px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 23px;
+
+    }
+
+
+    #caracteristicas {
+
+        background-position: left;
+        background-size: 140%;
+        height: 400px;
+        border: 1px solid lightgray;
+
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 18px;
+        padding-top: 60px;
+        font-size: 17px
+    }
+
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 400px;
+
+    }
+
+
+    #oficina p {
+        
+        font-size: 16px
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;       
+        font-size: 17px;
+
+    }
+
+
+    #oficina div p:first-child {
+    
+        font-size: 17px
+    }
+
+
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 650px - Vertical  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:655px) and (orientation:portrait) {
+
+    #iniciar h1 {
+
+        font-size: 16px;
+    
+    }
+
+    #iniciar span {
+
+        font-size: 14px;
+    }
+
+    #iniciar div {
+
+        width: 23%;
+    }
+
+
+    #quienesSomos {
+
+
+        background-position: left 30%;
+        background-attachment: unset;
+        background-size: 160%;
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 18px;
+
+    }
+
+    #quienesSomos p {
+
+        font-size: 16px;
+        width: 70%;
+        padding-top: 3%;
+    }
+
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+    #enfoque div p {
+
+        font-size: 15px;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 18px;
+
+    }
+
+    #enfoque div span {
+
+        font-size: 20px;
+
+    }
+
+
+    #caracteristicas {
+
+        background-size: 150%;
+        height: 400px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 15px;
+
+
+    }
+
+
+    #oficina {
+
+        background-size: 300%;
+        background-position: right;
+        background-attachment: unset;
+
+
+    }
+
+    #oficina p {
+
+        font-size: 14px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 20px;
+        font-size: 16px;
+
+    }
+
+
+    #oficina div p:first-child {
+
+        font-size: 16px;
+
+    }
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 550px - Vertical  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:550px) and (orientation:portrait) {
+
+
+    #iniciar div {
+
+        width: 28%;
+    }
+
+
+    #quienesSomos p {
+
+
+        width: 70%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 13px;
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 14px;
+
+    }
+
+    #enfoque div h2 {
+
+        font-size: 16px;
+
+    }
+
+    #enfoque div p {
+
+        font-size: 13px;
+
+    }
+
+
+    #caracteristicas {
+
+        font-size: 13px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 420px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:420px) and (orientation:portrait) {
+
+    #iniciar h1 {
+
+        font-size: 12px;
+
+    }
+
+    
+
+    #iniciar span {
+
+        font-size: 11px;      
+
+    }
+
+
+
+    #quienesSomos {
+
+        background-position: left 30%;
+        background-attachment: unset;
+
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 14px;
+
+    }
+
+    #quienesSomos p {
+
+        width: 70%;
+        font-size: 11px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+
+
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+
+    }
+
+    #enfoque div p {
+
+        font-size: 10px;
+
+
+    }
+
+    #enfoque div h2 {
+
+        margin-bottom: 20px;
+        font-size: 15px;
+
+    }
+
+    #enfoque div span {
+
+        margin-bottom: 6%;
+        font-size: 18px;
+
+    }
+
+
+    #caracteristicas {
+
+
+        background-size: 150%;
+        height: 250px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 10px;
+
+    }
+
+
+    #oficina {
+
+        background-size: 200%;
+        background-position: right;
+        background-attachment: unset;
+        height: 300px;
+
+    }
+
+    #oficina p {
+
+        font-size: 11px;
+
+    }
+
+
+    #oficina h2 {
+
+
+        font-size: 14px;
+
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 14px;
+        margin-bottom: 0px;
+
+    }
+
+    #oficina div p:nth-child(2) {
+
+        margin-bottom: 0px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 360px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:360px) and (orientation:portrait) {
+
+    #iniciar h1 {
+
+        font-size: 10px;
+
+    }
+
+    #iniciar span {
+
+        font-size: 9px;
+    }
+
+
+
+    #quienesSomos {
+
+        height: auto;
+        background-attachment: unset;
+        background-size: 160%;
+
+    }
+
+    #quienesSomos h2 {
+
+        font-size: 12px;
+        padding-top: 3%;
+
+    }
+
+    #quienesSomos p {
+
+        width: 80%;
+        font-size: 10px;
+        margin-left: 0%;
+        padding-left: 3%;
+        padding-top: 3%;
+
+
+    }
+
+
+    #enfoque {
+
+        margin: 2%;
+    }
+
+
+    #enfoque div p {
+
+        font-size: 8px;
+    }
+
+    #enfoque div h2 {
+
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+
+    #enfoque div span {
+
+        font-size: 13px;
+
+    }
+
+
+    #caracteristicas {
+
+
+        background-size: 150%;
+        height: 200px;
+        border: 1px solid lightgray;
+
+    }
+
+
+    #caracteristicas p {
+
+        left: 18%;
+        width: 80%;
+        font-size: 9.5px;
+        padding-top: 25px;
+
+
+    }
+
+
+    #oficina {
+
+        background-size: 300%;
+        background-attachment: unset;
+        background-position: center;
+        height: 220px;
+
+    }
+
+
+    #oficina p {
+
+        font-size: 8px;
+
+    }
+
+
+    #oficina h2 {
+
+        margin-bottom: 0px;
+        font-size: 10px;
+
+    }
+
+
+
+    #oficina div p:first-child {
+
+        font-size: 9px;
+
+    }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 300px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:300px) and (orientation:portrait) {
+
+
+    #iniciar div{
+
+        width:33%
+    }
+
+    #caracteristicas p {
+
+        font-size: 8.5px;    
+
+    }
+
+
+    #oficina {
+
+
+        height: 300px;
+
+    }
+
+
+    #quienesSomos p {
+
+        font-size: 9px;
+        width: 100%
+    }
+
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 255px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+@media only Screen and (max-width:255px) and (orientation:portrait) {
+
+   
+
+    #iniciar div{
+
+        width: 38%;
+    }
+
+    #caracteristicas p {
+
+        font-size: 7px;
+        
+    }
+
+    #quienesSomos p {
+
+        font-size: 7px;
+        width: 100%
+    }
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 195px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:195px) and (orientation:portrait) {
+
+
+    #iniciar div{
+
+        width: 50%
+    }
+
+    #iniciar h1{
+
+      
+        font-size:8px
+    }
+   
+
+    #quienesSomos {
+        
+        background-size: 250%;           
+    
+    }
+
+    #caracteristicas {
+   
+        background-size: 250%;
+        
+    }
+
+    #caracteristicas p {
+
+        font-size: 6px;       
+        
+    }
+
+    #quienesSomos p {
+
+        font-size: 6px;
+        width: 100%
+    }
+
+    #enfoque div p{
+
+        font-size: 6px;
+
+    }
+
+}

@@ -1,0 +1,955 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-body">
+      <div class="container">
+        <div class="col-md-20">
+          <div id="contenedor" class="container mt-5 mb-5">
+
+
+            <div id="div-icons">
+
+              <div>
+                <a [routerLink]="['/sigaHomePage']">
+                  <fa-icon [icon]="faHouse" title="Home" class="icons" id="home"></fa-icon>
+                </a>
+              </div>
+
+              <div>
+
+                <a>
+                  <fa-icon [icon]="faCircleXmark" title="Salir" class="icons" id="salir"></fa-icon>
+                </a>
+              </div>
+
+              <div>
+                <a [routerLink]="['/sigaStudentPage']">
+                  <fa-icon [icon]="faRotateLeft" title="Atrás" class="icons" id="atras"></fa-icon>
+                </a>
+              </div>
+
+            </div>
+
+            <form (ngSubmit)="updStudent()" class="form-horizontal" id="formAlumno" name="formAlumno">
+              <input type="hidden"> <br />
+
+              <!--************************ALUMNO*********************************-->
+
+
+              <div class="row-alumno">
+
+                <h2>Editar Alumno</h2>
+
+              </div>
+
+              <br />
+
+              <div class="div-borders">
+                <div class="row">
+
+                  <div class="col-sm-6" id="divPrimNombre">
+                    <label for="primNombAl" class="col-form-label" id="col-label-PrimerNomb">Primer
+                      nombre*</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="primNombAl"
+                      [(ngModel)]="studentdetail.primerNombre" name="primerNombreAlumn" /><br />
+                    <span id="spanPrimNomEst" class="span-fields">El campo Primer nombre es
+                      obligatorio</span>-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="primNombAl"
+                      [(ngModel)]="studentdetail.primerNombre" name="primerNombreAlumn"
+                      onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 || event.charCode== 48 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)||(event.charCode >= 122))" />
+                    <br />
+                    <span id="spanPrimNomEst" class="span-fields">El campo Primer nombre es
+                      obligatorio</span>
+
+                  </div>
+
+                  <div class="col-sm-6" id="divSegNombre">
+                    <label for="segNombAl" class="col-form-label" id="col-label-SegundoNomb">Segundo
+                      nombre</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="segNombAl"
+                      [(ngModel)]="studentdetail.segundoNombre" name="segundoNombreAlumn" />-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="segNombAl"
+                      [(ngModel)]="studentdetail.segundoNombre" name="segundoNombreAlumn" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" />
+                    <br />
+                    <span id="spanSegNomEst" class="span-fields"></span>
+                  </div>
+
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-sm-6" id="divPrimApellido">
+                    <label for="primApellAl" class="col-form-label" id="col-label-PrimerApell">Primer
+                      apellido*</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="primApellAl"
+                      [(ngModel)]="studentdetail.primerApellido" name="primerApellidoAlumn" /><br />
+                    <span id="spanPrimApeEst" class="span-fields">El campo Primer apellido es
+                      obligatorio</span>-->
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="primApellAl"
+                      [(ngModel)]="studentdetail.primerApellido" name="primerApellidoAlumn" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" /><br />
+                    <span id="spanPrimApeEst" class="span-fields">El campo Primer apellido es
+                      obligatorio</span>
+                  </div>
+                  <div class="col-sm-6" id="divSegApellido">
+                    <label for="segApellAl" class="col-form-label" id="col-label-SegundoApell">Segundo
+                      apellido</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="segApellAl"
+                      [(ngModel)]="studentdetail.segundoApellido" name="segundoApellidoAlumn" />-->
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="segApellAl"
+                      [(ngModel)]="studentdetail.segundoApellido" name="segundoApellidoAlumn" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" /><br />
+                    <span id="spanSegApellEst" class="span-fields"></span>
+                  </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-sm-6" id="div-tipo-num-ced">
+                    <label for="numDocAl" class="col-form-label-ced">Cédula*</label>
+
+                    <select class="input-cmb-cedula" id="tipoDocAl" [(ngModel)]="studentdetail.tipoDocumento"
+                      name="TipoDocAlumn" (change)="studentDocType($event)">
+                      <option value='default'>---</option>
+                      <option value='V'>V</option>
+                      <option value='E'>E</option>
+                      <option value='P'>P</option>
+                    </select>
+
+
+                    <!--<input type="number"
+                      onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+                      onKeyPress="if(this.value.length==8) return false;" class="input-cedula" id="numDocAl"
+                      [(ngModel)]="studentdetail.numeroDocumento" name="NumDocAlumn" /><br />
+                    <span id="spanCedEst" class="span-fields">El campo Cédula es obligatorio</span>-->
+
+                    <!--borrar            | 46
+                        números del 0 al 9| desde el 48 al 57
+
+                        al decir menores a 48 ó mayores a 57, se descarta el
+                        resto de los caracteres y solo se incluyen números
+                                            
+                        if(event.key==='.'){event.preventDefault();} para
+                        que no permita colocar punto decimal-->
+
+                    <input type="number" onkeypress="if (event.keyCode == 46) return true;  
+                      else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                      else if(this.value.length==8) return false; else return true"
+                      onkeydown="if(event.key==='.'){event.preventDefault();}" class="input-cedula" id="numDocAl"
+                      [(ngModel)]="studentdetail.numeroDocumento" name="NumDocAlumn" />
+                      <span id="spanCedEst" class="span-fields">El campo Cédula es obligatorio</span>
+                  </div>
+
+                  <div class="col-sm-6" id="div-fecha-Nac">
+                    <label for="fechNacAl" class="col-form-label-fech">Fecha de
+                      nacimiento*</label>
+                    <input type="date" class="input-fech-nac" id="fechNacAl" [(ngModel)]="studentdetail.fechaNacimiento"
+                      name="fechaNacAlumn" (change)="getStudentAge()" /><br />
+                    <span id="spanFechNacEst" class="span-fields">Fecha inválida, complete el campo
+                      fecha</span>
+
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="row">
+
+                  <div class="col-sm-6" id="divLugNacimiento">
+                    <label class="col-label-LugarNacimiento">Lugar de nacimiento*</label>
+
+                    <select class="selectLugarNac" [(ngModel)]="studentdetail.lugarDeNacimiento" name="lugarNacAlumn"
+                      id="lugarNacAl" (change)="getStudentNationality($event)">
+                      <option value='default'>--Select--</option>
+                      <option *ngFor="let array of countryNac" [value]="array.paisNac">
+                        {{array.paisNac}}
+                      </option>
+                    </select><br />
+                    <span id="spanLugarNacEst" class="span-fields">El campo Lugar de nacimiento es
+                      obligatorio</span>
+                  </div>
+                  <div class="col-sm-6" id="divNacionalidad">
+                    <label for="nacionalidad" class="col-label-Nacionalidad">Nacionalidad*
+                    </label>
+                    <input type="text" class="input-nacionalidad" [(ngModel)]="studentdetail.nacionalidad"
+                      id="nacionalidad" name="nacionalidadAlumn" disabled /><br />
+                    <span id="spanNacEst" class="span-fields">El campo Nacionalidad es
+                      obligatorio</span>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row">
+                  <div class="col-sm-4" id="div-edad">
+                    <label for="edadAl" id="label-edad-alumn" class="col-form-label-edad">Edad*</label>
+                    <input type="text" class="input-edad"
+                      onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="edadAl"
+                      [(ngModel)]="studentdetail.edad" name="edadAlumn" disabled /><br />
+                    <span id="spanEdadEst" class="span-fields">El campo Edad es obligatorio</span>
+                  </div>
+                  <div class="col-sm-4" id="div-sexo">
+                    <label for="sexoAl" class="col-form-label-sexo">Sexo*</label>
+
+                    <select class="input-sexo" id="sexoAl" [(ngModel)]="studentdetail.sexo" name="sexoAlumn">                      
+                      <option value='FEMENINO'>FEMENINO</option>
+                      <option value='MASCULINO'>MASCULINO</option>
+                    </select>
+
+                    <br />
+                    <span id="spanSexoEst" class="span-fields">El campo Sexo es obligatorio</span>
+
+                  </div>
+
+
+                  <div class="col-sm-4" id="div-fecha-ingr-alum">
+                    <label for="fechIngAl" id="col-form-label-fechIngr">Ingreso*</label>
+                    <input type="date" class="input-fech-ing" [(ngModel)]="studentdetail.fechaIngreso"
+                      name="fechaIngresoAlumn" id="fechIngAl" (change)="valDateInput()" /><br />
+                    <span id="spanAdmEst" class="span-fields">Fecha inválida, complete el campo
+                      fecha</span>
+
+                  </div>
+                </div>
+                <br />
+
+                <div class="row div-telefCorreo-Titulo">
+
+                  <div class="col-sm-6 div-telef">
+                    <label class="col-form-label-" id="label-telf-est">Teléfono*</label>
+                  </div>
+
+                  <div class="col-sm-6 div-correo">
+                    <label class="col-form-label-">Correo electrónico*</label>
+                  </div>
+
+                </div>
+
+
+                <div class="div-pr">
+
+                  <div class="row div-telef-info">
+
+                    <div class="div-operadora">
+
+                      <select class="input-cod-operadora" id="codOperadoraEst"
+                        [(ngModel)]="studentdetail.codigoOperadoraTelefono" name="codOperEst">
+
+                        <option value='0212'>0212</option>
+                        <option value='0412'>0412</option>
+                        <option value='0414'>0414</option>
+                        <option value='0416'>0416</option>
+                        <option value='0424'>0424</option>
+                        <option value='0426'>0426</option>
+
+                      </select>
+
+                    </div>
+                    <div class="div-num-tel">
+
+                      <!--<input type="number" class="input-num-tlf" [(ngModel)]="studentdetail.telefono"
+                        name="telefonoAlumn"
+                        onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+                        onKeyPress="if(this.value.length==7) return false;" id="textoTlfPpalAl" /> -->
+
+                        <input type="number" onkeypress="if (event.keyCode == 46) return true;                         
+                          else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                          else if(this.value.length==7) return false; else return true"
+                          onkeydown="if(event.key==='.' || event.key==='-'){event.preventDefault();}"
+                          class="input-num-tlf" id="textoTlfPpalAl"
+                          [(ngModel)]="studentdetail.telefono" name="telefonoAlumn"/>
+
+                      <br />
+
+
+                    </div>
+
+                    <div class="div-span-Telef">
+                      <span id="spanTelefEst" class="span-fields">El campo Teléfono es obligatorio</span>
+                    </div>
+                  </div>
+
+                  <div class="row1 div-correo-info">
+
+                    <div id="div-email">
+                      <input type="email" class="input-email" [(ngModel)]="studentdetail.email" name="emailAlumn"
+                        id="emailAl" /><br />
+                    </div>
+                    <div class="div-span-correo">
+                      <span id="spanCorreoEst" class="span-fields-email">Formato-Correo-OK</span>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="textoDirPpalAl" class="col-form-label-dir">Dirección
+                      domicilio*</label>
+                    <input type="text" class="input-txtDireccion" id="textoDirPpalAl"
+                      [(ngModel)]="studentdetail.direccion" name="direccionAlumn" /><br />
+                    <span id="spanDirEst" class="span-fields">El campo Dirección domicilio es obligatorio</span>
+                  </div>
+
+                </div>
+                <br />
+                <br />
+              </div>
+
+              <!--************************FIN ALUMNO*********************************-->
+
+              <!--************************REPRESENTANTE PRINCIPAL*********************************-->
+
+
+
+              <div class="row-repr ">
+
+                <h2>Editar Representante</h2>
+
+              </div>
+
+              <br />
+
+              
+              <div class="row-busq">
+
+                <div class="col-sm-12" id="div-tiponum-ced">
+
+                    <div class="inputCedula">
+                        <label for="numDocRepr" class="col-form-label-busqCedula">Búsqueda por Cédula:
+                        </label>
+                    </div>
+
+                    <div class="inputCedula">
+                        <select class="input-cmb-cedula" id="tipoDocReprBusq">
+
+                            <option value='default'>---</option>
+                            <option value='V'>V</option>
+                            <option value='E'>E</option>
+                            <option value='P'>P</option>
+
+                        </select>
+                    </div>
+
+                    <div class="inputCedula">
+
+                        <!--borrar            | 46
+                            números del 0 al 9| desde el 48 al 57
+
+                            al decir menores a 48 ó mayores a 57, se descarta el
+                            resto de los caracteres y solo se incluyen números
+                            
+                            if(event.key==='.'){event.preventDefault();} para
+                            que no permita colocar punto decimal-->
+
+                        <input type="number" class="input-cedula inputCed-busq" onkeypress="if (event.keyCode == 46) return true;  
+                        else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                        else if(this.value.length==8) return false; else return true"
+                        onkeydown="if(event.key==='.'){event.preventDefault();}" id="numDocReprBusq"  (focus)="cleanFields()"/> <br />
+                       
+
+                    </div>
+
+                    <div class="inputCedula">
+                        <button type="button" id="getRpr" class="btn btn-primary" (click)="getRepr_()">
+
+                            <fa-icon [icon]="faMagnifyingGlass" title="Home" class="icons"
+                                id="magnifyingGlass"></fa-icon>
+
+                        </button>
+                    </div>
+
+                </div>
+                <br />
+
+                <div id="search">
+                    <span>Consultando...</span>
+                </div>
+
+            </div>
+
+              <div class="div-borders">
+                <div class="row">
+
+                  <div class="col-sm-6" id="divPrimNombre">
+                    <label for="primNombRepr" class="col-form-label" id="col-label-PrimerNombRpr">Primer
+                      nombre*</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="primNombRepr"
+                      [(ngModel)]="studentdetail.representante.primerNombre" name="primerNombreRepr" /><br />
+                    <span id="spanPrimNomRpr" class="span-fields">El campo Primer nombre es
+                      obligatorio</span>-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="primNombRepr"
+                      [(ngModel)]="studentdetail.representante.primerNombre" name="primerNombreRepr" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" /><br />
+                    <span id="spanPrimNomRpr" class="span-fields">El campo Primer nombre es
+                      obligatorio</span>
+
+                  </div>
+
+                  <div class="col-sm-6" id="divSegNombre">
+                    <label for="segNombRepr" class="col-form-label" id="col-label-SegundoNombRpr">Segundo
+                      nombre</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="segNombRepr"
+                      [(ngModel)]="studentdetail.representante.segundoNombre" name="segundoNombreRepr" />-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="segNombRepr"
+                      [(ngModel)]="studentdetail.representante.segundoNombre" name="segundoNombreRepr" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" />
+                    <br />
+                    <span id="spanSegNomRpr" class="span-fields"></span>
+                  </div>
+
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-sm-6" id="divPrimApellido">
+                    <label for="primApellRepr" class="col-form-label" id="col-label-PrimerApellRpr">Primer
+                      apellido*</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="primApellRepr"
+                      [(ngModel)]="studentdetail.representante.primerApellido" name="primerApellidoRepr" /><br />
+                    <span id="spanPrimApeRpr" class="span-fields">El campo Primer apellido es
+                      obligatorio</span>-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante--> 
+                    <input type="text" class="input-nombre-apellido" id="primApellRepr"
+                      [(ngModel)]="studentdetail.representante.primerApellido" name="primerApellidoRepr" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" /><br />
+                    <span id="spanPrimApeRpr" class="span-fields">El campo Primer nombre es
+                      obligatorio</span>
+
+                  </div>
+                  <div class="col-sm-6" id="divSegApellido">
+                    <label for="segApellRepr" class="col-form-label" id="col-label-SegundoApellRpr">Segundo
+                      apellido</label>
+                    <!--<input type="text" class="input-nombre-apellido" id="segApellRepr"
+                      [(ngModel)]="studentdetail.representante.segundoApellido" name="segundoApellidoRepr" />-->
+
+                    <!--letra Ñ             | 209
+                        letra ñ             | 241
+                        espacio en blanco   | 32
+                        letras A a la Z     | desde el 65 hasta el 90
+                        letras a a la z     | desde el 97 hasta el 122
+                        acentos             | desde el 122 en adelante-->
+                    <input type="text" class="input-nombre-apellido" id="segApellRepr"
+                      [(ngModel)]="studentdetail.representante.segundoApellido" name="segundoApellidoRepr" onkeypress="return (event.charCode == 209 || event.charCode == 241 || event.charCode== 32 
+                      ||(event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)
+                      ||(event.charCode >= 122))" />
+                    <br />
+                    <span id="spanSegApeRpr" class="span-fields"></span>
+                  </div>
+                </div>
+                <br />
+
+                <div class="row">
+                  <div class="col-sm-6" id="div-tipo-num-ced">
+                    <label for="numDocRepr" class="col-form-label-ced" id="label-ced-rpr">Cédula*</label>
+
+
+                    <select class="input-cmb-cedula" id="tipoDocRepr"
+                      [(ngModel)]="studentdetail.representante.tipoDocumento" name="tipoDocumento"
+                      (change)="reprDocType($event)">
+                      <option value='default'>---</option>
+                      <option value='V'>V</option>
+                      <option value='E'>E</option>
+                      <option value='P'>P</option>
+                    </select>
+
+                    <!--<input type="number"
+                      onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+                      onKeyPress="if(this.value.length==8) return false;" class="input-cedula" id="numDocRepr"
+                      [(ngModel)]="studentdetail.representante.numeroDocumento" name="numeroDocumentoRepr" /><br />
+
+                    <span id="spanCedRpr" class="span-fields">El campo Cédula es obligatorio</span>-->
+
+                    <!--borrar            | 46
+                        números del 0 al 9| desde el 48 al 57
+
+                        al decir menores a 48 ó mayores a 57, se descarta el
+                        resto de los caracteres y solo se incluyen números
+                                            
+                        if(event.key==='.'){event.preventDefault();} para
+                        que no permita colocar punto decimal-->
+
+                    <input type="number" onkeypress="if (event.keyCode == 46) return true;  
+                      else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                      else if(this.value.length==8) return false; else return true"
+                      onkeydown="if(event.key==='.'){event.preventDefault();}" class="input-cedula" id="numDocRepr"
+                      [(ngModel)]="studentdetail.representante.numeroDocumento" name="numeroDocumentoRepr" />
+                    <br />
+                    <span id="spanCedRpr" class="span-fields">El campo Cédula es obligatorio</span>
+
+                  </div>
+
+
+                  <div class="col-sm-6" id="div-fecha-Nac">
+                    <label for="fechNacRepr" class="col-form-label-fech" id="label-fechaNac-rpr">Fecha de
+                      nacimiento*</label>
+
+                    <input type="date" class="input-fech-nac" id="fechNacRepr"
+                      [(ngModel)]="studentdetail.representante.fechaNacimieno" name="fechaNacimientoRepr"
+                      (change)="getReprAge()" /><br />
+                    <span id="spanFechNacRpr" class="span-fields">Fecha inválida, complete el campo
+                      fecha</span>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row">
+
+                  <div class="col-sm-6" id="divLugNacimiento">
+                    <label class="col-label-LugarNacimiento" id="label-lugarNac-rpr">Lugar de
+                      nacimiento*</label>
+                    <select class="selectLugarNac" [(ngModel)]="studentdetail.representante.lugarDeNacimiento"
+                      name="lugarDeNacimientoRepr" id="lugarNacRepr" (change)="getRprNationality($event)">
+                      <option value='default'>--Select--</option>
+                      <option *ngFor="let array of countryNac" [value]="array.paisNac">
+                        {{array.paisNac}}
+                      </option>
+                    </select><br />
+                    <span id="spanLugNacRpr" class="span-fields">El campo Lugar de nacimiento es
+                      obligatorio</span>
+
+                  </div>
+
+                  <div class="col-sm-6" id="divNacionalidad">
+                    <label for="nacionalidad" class="col-label-Nacionalidad" id="label-nacio-rpr">Nacionalidad*
+                    </label>
+                    <input type="text" class="input-nacionalidad" [(ngModel)]="studentdetail.representante.nacionalidad"
+                      id="nacionalidadRepr" name="nacionalidadRep" disabled><br />
+                    <span id="spanNacRpr" class="span-fields">El campo Nacionalidad es
+                      obligatorio</span>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row">
+                  <div class="col-sm-3" id="div-edad">
+                    <label for="edadRepr" class="col-form-label-edad" id="label-edad-rpr">Edad*</label>
+                    <input type="text" class="input-edad"
+                      onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="edadRepr"
+                      [(ngModel)]="studentdetail.representante.edad" name="edadRepr" disabled /><br />
+                    <span id="spanEdadRpr" class="span-fields">El campo Edad es obligatorio</span>
+                  </div>
+                  <div class="col-sm-3" id="div-sexo">
+
+                    <label for="sexoRepr" class="col-form-label-sexo" id="label-sexo-rpr">Sexo*</label>
+
+                    <select class="input-sexo" id="sexoRepr" [(ngModel)]="studentdetail.representante.sexo"
+                      name="sexoRepr">
+                      <option value='default'>--Select--</option>
+                      <option value='FEMENINO'>FEMENINO</option>
+                      <option value='MASCULINO'>MASCULINO</option>
+                    </select>
+                    <br />
+                    <span id="spanSexoRpr" class="span-fields">El campo Sexo es obligatorio</span>
+                  </div>
+
+
+                  <div class="col-sm-3" id="div-parentesco">
+                    <label for="parentesco" id="col-form-label-parentesco">Parentesco*</label>
+
+                    <select class="input-parentesco" id="parentesco" [(ngModel)]="studentdetail.parentesco"
+                      name="parentescoRepr">
+                      <option value='default'>--Select--</option>
+                      <option value="AMIGO">AMIGO(a)</option>
+                      <option value="MADRE">MADRE</option>
+                      <option value="MADRINA">MADRINA</option>
+                      <option value="PADRE">PADRE</option>
+                      <option value="PADRINO">PADRINO</option>
+                      <option value="TIO">TIO(a)</option>
+                      <option value="TUTOR">TUTOR(a)</option>
+
+                    </select>
+                    <br />
+                    <span id="spanParentRpr" class="span-fields">El campo Parentesco es
+                      obligatorio</span>
+
+                  </div>
+
+                  <div class="col-sm-3" id="div-edo-civil">
+                    <label for="civil" id="col-form-label-civil">Edo civil*</label>
+
+                    <select class="input-civil" id="civil" [(ngModel)]="studentdetail.representante.estadoCivil"
+                      name="estadoCivilRepr">
+                      <option value='default'>--Select--</option>
+                      <option value="CASADO">CASADO</option>
+                      <option value="CONCUBINO">CONCUBINO</option>
+                      <option value="DIVORCIADO">DIVORCIADO</option>
+                      <option value="SOLTERO">SOLTERO</option>
+                      <option value="VIUDO">VIUDO</option>
+
+                    </select>
+                    <br />
+                    <span id="spanCivilRpr" class="span-fields">El campo Edo civil es
+                      obligatorio</span>
+
+                  </div>
+                </div>
+                <br />
+                <br />
+
+
+                <div class="row div-telefCorreo-Titulo">
+
+
+                  <div class="col-sm-6 div-telef">
+                    <label class="col-form-label" id="label-telef-rpr">Teléfono personal*</label>
+                  </div>
+
+
+                  <div class="col-sm-6 div-correo">
+                    <label class="col-form-label" id="label-correo-rpr">Correo electrónico*</label>
+                  </div>
+
+                </div>
+                <div class="div-pr">
+
+                  <div class="row div-telef-info">
+
+                    <div class="div-operadora">
+
+
+                      <select class="input-cod-operadora" id="codOperadoraRpr"
+                        [(ngModel)]="studentdetail.representante.codigoOperadoraTelefono" name="codOperRpr">
+                        <option value='default'>-Select-</option>
+                        <option value='0212'>0212</option>
+                        <option value='0412'>0412</option>
+                        <option value='0414'>0414</option>
+                        <option value='0416'>0416</option>
+                        <option value='0424'>0424</option>
+                        <option value='0426'>0426</option>
+
+                      </select>
+
+                    </div>
+
+
+                    <div class="div-num-tel">
+                      <!--<input type="number" class="input-num-tlf" [(ngModel)]="studentdetail.representante.telefono"
+                        name="telefonoRepr"
+                        onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+                        onKeyPress="if(this.value.length==7) return false;" id="textoTlfPpalRpr" />-->
+                        <input type="number" onkeypress="if (event.keyCode == 46) return true;  
+                          else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                          else if(this.value.length==7) return false; else return true"
+                          onkeydown="if(event.key==='.'){event.preventDefault();}"
+                          class="input-num-tlf" id="textoTlfPpalRpr"
+                          [(ngModel)]="studentdetail.representante.telefono" name="telefonoRepr"/>
+                      <br />
+                    </div>
+                    <div class="div-span-Telef">
+                      <span id="spanTelefRpr" class="span-fields">El campo Teléfono es obligatorio</span>
+                    </div>
+                  </div>
+
+
+                  <div class="row1 div-correo-info">
+                    <div id="div-email">
+
+                      <input type="email" class="input-email" name="email" id="emailRepr"
+                        [(ngModel)]="studentdetail.representante.email" name="emailRepr" /><br />
+
+                    </div>
+                    <div class="div-span-correo">
+                      <span id="spanCorreoRpr" class="span-fields-email">Formato-Correo-OK</span>
+                    </div>
+                  </div>
+                </div>
+                <br />
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="textoDirPpalRpr" class="col-form-label-dir" id="label-dir-rpr">Dirección
+                      domicilio*</label>
+                    <input type="text" class="input-txtDireccion" id="textoDirPpalRpr" name="direccion"
+                      [(ngModel)]="studentdetail.representante.direccion" name="direccionRepr" /><br />
+                    <span id="spanDirRpr" class="span-fields">El campo Dirección domicilio es
+                      obligatorio</span>
+                  </div>
+                </div>
+                <br />
+
+                <div class="row">
+                  <div class="col-sm-4" id="divProfesion">
+                    <label for="profesion" class="col-form-label" id="col-label-Profesion">Profesión*
+                    </label>
+                    <input type="text" class="input-info-empresa" id="profesion" name="profesion"
+                      [(ngModel)]="studentdetail.representante.profesion" name="profesionRepr" /><br />
+                    <span id="spanProfesion" class="span-fields">El campo Profesión es
+                      obligatorio</span>
+
+                  </div>
+                  <div class="col-sm-4" id="divOcupacion">
+                    <label for="ocupacion" class="col-form-label" id="col-label-ocupacion">Ocupación*
+                    </label>
+                    <input type="text" class="input-info-empresa" id="ocupacion" name="ocupacion"
+                      [(ngModel)]="studentdetail.representante.ocupacion" name="ocupacionRepr" /><br />
+                    <span id="spanOcup" class="span-fields">El campo Ocupación es
+                      obligatorio</span>
+                  </div>
+                  <div class="col-sm-4" id="divIngresos">
+                    <label for="ingresos" class="col-form-label" id="col-label-Ingresos">Ingresos/mes*
+
+                    </label>                    
+                        <input type="text" class="input-info-empresa" id="ingresos"                                             
+                            onkeypress="return (event.charCode === 0 )|| /[0-9.]/.test(String.fromCharCode(event.charCode));"                                        
+                            (change)="validate($event)" maxlength="11" 
+                            [(ngModel)]="studentdetail.representante.ingresoMensualAproximado" name="ingresos"/>
+                    <br />
+                    <span id="spanIngre" class="span-fields">El campo Ingresos es
+                      obligatorio</span>
+                  </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-sm-6" id="divNombreEmpresa">
+                    <label for="empresa" class="col-form-label" id="col-label-NombEmpr">Nombre
+                      empresa*
+                    </label>
+                    <input type="text" class="input-info-empresa" id="empresa" name="empresa"
+                      [(ngModel)]="studentdetail.representante.empresaDondeTrabaja" name="empresaRepr" /><br />
+                    <span id="spanNomEmpr" class="span-fields">El campo Nombre empresa es
+                      obligatorio</span>
+                  </div>
+
+                  <div class="col-sm-6" id="divTelefEmpresa">
+
+                    <div>
+                      <label for="textoTlfEmprRpr" class="col-form-label" id="col-label-telefEmpr">Teléfono
+                        empresa*
+                      </label>
+
+
+                      <select class="input-cod-operadora-emp" id="codOperEmprRpr"
+                        [(ngModel)]="studentdetail.representante.codigoOperadoraTelefonoEmpresa" name="codOperEmpr">
+                        <option value='default'>-Select-</option>
+                        <option value='0212'>0212</option>
+                        <option value='0412'>0412</option>
+                        <option value='0414'>0414</option>
+                        <option value='0416'>0416</option>
+                        <option value='0424'>0424</option>
+                        <option value='0426'>0426</option>
+                      </select>
+
+                      <!--<input type="number" class="input-num-tlf-empr"
+                        [(ngModel)]="studentdetail.representante.telefonoEmpresa" name="telefEmprRepr"
+                        onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'"
+                        onKeyPress="if(this.value.length==7) return false;" id="textoTlfEmprRpr" />-->
+
+                        <input type="number" onkeypress="if (event.keyCode == 46) return true;  
+                          else if( event.keyCode < 48 || event.keyCode > 57) return false;                                           
+                          else if(this.value.length==7) return false; else return true"
+                          onkeydown="if(event.key==='.'){event.preventDefault();}"
+                          class="input-num-tlf-empr" id="textoTlfEmprRpr"
+                          [(ngModel)]="studentdetail.representante.telefonoEmpresa" name="telefEmprRepr"/>
+                      <br />
+                      <span id="spanTelefEmprRpr" class="span-fields">El campo Teléfono
+                        empresa es obligatorio</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="direccEmpresa" class="col-form-label-dir" id="label-dir-empre">Dirección empresa*
+                    </label>
+                    <input type="text" class="input-txtDireccion" id="direccEmpresa" name="direccionEmpresas"
+                      [(ngModel)]="studentdetail.representante.direccionLaboral" name="direccEmprRepr" /><br />
+                    <span id="spanDirEmprRpr" class="span-fields">El campo Dirección empresa es
+                      obligatorio</span>
+                  </div>
+
+                </div>
+                <br />
+                <br />
+
+              </div>
+              <div class="row-curso" id="h2EditarCurso">
+                <h2>Editar Curso</h2>
+              </div>
+              <br />
+
+
+              <div class="card-table-1">
+                <div id="contenedor" class="container mt-5 mb-5">
+                  <div class="table-responsive">
+                    <div class="row" id="rowtablecursos">
+                      <table id="tablecursos" class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Id del curso</th>
+                            <th>Año que cursa</th>
+                            <th>Sección</th>
+                            <th>Nivel</th>
+                            <th>Turno</th>
+                            <th>Periodo académico</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <select id="idCurso" disabled="true">
+
+                                <option>{{studentdetail.curso.id}}</option>
+
+                              </select>
+
+                            </td>
+
+                            <td><input type="text" id="annio" [(ngModel)]="studentdetail.curso.annio" name="annio"
+                                disabled>
+                            </td>
+
+
+                            <td><input type="text" id="seccion" [(ngModel)]="studentdetail.curso.seccion" name="seccion"
+                                disabled>
+
+                            </td>
+
+                            <td><input type="text" id="nivel" [(ngModel)]="studentdetail.curso.nivel" name="nivel"
+                                disabled>
+
+                            </td>
+
+                            <td><input type="text" id="turno" [(ngModel)]="studentdetail.curso.turno" name="turno"
+                                disabled>
+
+
+                            </td>
+
+                            <td><input type="text" id="annioescolar" [(ngModel)]="studentdetail.curso.periodoAcademico"
+                                name="annioescolar" disabled>
+                            </td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+
+                <br /> <br />
+
+              </div>
+
+              <div id="div-icon-eraser">
+                <div>
+
+                  <span class="span-fields" id="spanCurso">Debe seleccionar
+                    un Curso</span>
+                </div>
+
+              </div>
+              <div id="divCourse">
+                <div class="card-table">
+                  <div id="contenedor" class="container mt-5 mb-5">
+
+
+                    <div class="table-responsive">
+
+                      <table class="table table-striped table-bordered table-sm row-border hover "
+                        id="datatableexample">
+                        <thead>
+                          <tr>
+                            <th class="columns">Id</th>
+                            <th class="columns">Año</th>
+                            <th class="columns">Sección</th>
+                            <th class="columns">Nivel</th>
+                            <th class="columns">Turno</th>
+                            <th class="columns">Período</th>
+                            <th class="columns">Seleccionar</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr *ngFor="let group of coursesList">
+                            <td>{{group.id}}</td>
+                            <td>{{group.annio}}</td>
+                            <td>{{group.seccion}}</td>
+                            <td>{{group.nivel}}</td>
+                            <td>{{group.turno}}</td>
+                            <td>{{group.periodoAcademico}}</td>
+
+
+                            <td>
+
+                              <button type="button" id="assignButton" class="btn btn-primary"
+                                (click)="assingCours($event)">Asignar</button>
+
+                            </td>
+
+                          </tr>
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-12" id="save-button">
+                  <input type="submit" name="submit" title="Guardar Cambios" value="Guardar" id="guardar" />
+                </div>
+              </div>
+              <br /> <br /> <br />
+            </form>
+
+          </div>
+        </div>

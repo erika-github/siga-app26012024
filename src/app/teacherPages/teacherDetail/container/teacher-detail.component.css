@@ -1,0 +1,5375 @@
+* {
+
+  font-family: Helvetica, sans-serif;
+
+}
+
+  
+.col-form-label-cedula,
+.col-form-label-repr {
+
+  margin-right: 5px;
+
+}
+
+.col-form-label-postGrados, .col-form-label-profesion{
+
+  margin-right:20px
+}
+
+
+#annioServicio{
+
+  width:50px
+}
+
+#graduado_{
+  
+  display:flex
+
+}
+
+#spanGraduadoDoc{
+
+  margin-left: 15px;
+}
+
+
+#label-curso-uno, #label-curso-tres{
+
+  margin-right: 55px;
+}
+
+.col-form-label-repr-res {
+
+  margin-right: 5px;
+
+}
+
+.input-cursos,
+.input-profesion
+ {
+
+  
+  border: 1px solid #b5b5b5;  
+  border-radius: 5px;
+  width: 75%
+
+}
+  
+
+.card {
+
+  overflow-x: hidden;
+
+}
+
+#cboxDetail {
+
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  margin-right: 5px;  
+
+}
+
+.container {
+
+  padding: 0px 7px;
+}
+
+.span-fields {
+
+  display: none;
+}
+
+
+#profesion2 {
+
+  margin-right:30px
+
+}
+
+#getRpr {
+
+  padding: 0px;
+  width: 50px
+}
+
+#search {
+
+  display: none;
+
+}
+
+#guardar {
+
+  border-radius: 5px;
+}
+
+#guardar:hover {
+
+  background-color: #E1E1E1;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+
+}
+
+#getRpr {
+
+  padding: 0px;
+  width: 50px
+}
+
+
+#spanCurso {
+
+  margin-left: 25px
+}
+
+
+.span-fields-telf,
+.span-fields-email {
+
+  color: transparent;
+}
+
+.card {
+
+  border: none;
+  background: #F5F5F5;
+
+}
+
+.card-header {
+
+  background: #F5F5F5;
+
+}
+
+form {
+
+  box-shadow: 0 5px 15px -5px rgb(0 0 0/30%);
+  background: #F5F5F5;
+  border: 1px solid lightGray;
+  border-radius: 10px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  color: #2F5597;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+}
+
+#save-button {
+
+  text-align: center;
+
+}
+
+#guardar {
+
+  padding: 10px 15px
+}
+
+
+#datatableexample {
+
+  width: 100%
+}
+
+.div-span-correo,
+.div-span-Telef {
+
+  text-align: center;
+  width: 100%
+}
+
+.row.div-telefCorreo-Titulo {
+
+  width: 100%;
+}
+
+.row.div-telef-info,
+
+.div-operadora,
+
+.div-num-tel,
+
+.row1.div-correo-info {
+  width: 50%
+}
+
+.row.div-telef-info {
+
+  margin: 0px;
+}
+
+.div-pr {
+
+  display: flex;
+
+}
+
+#div-icons {
+
+  display: flex;
+  flex-wrap: wrap
+}
+
+
+.col-sm-6.div-telef,
+.col-sm-6.div-correo {
+
+  text-align: center;
+}
+
+#div-fecha-Nac,
+.div-operadora,
+#divSegNombreDoc,
+#divprofesion,    
+#divCategoria,
+#divCursoDos,
+#divCursoCuatro,
+#divSegApellidoDoc,
+#divNacionalidad,
+#divTelefEmpresa {
+
+  text-align: end
+}
+
+#divOcupacion {
+
+  text-align: start
+}
+
+
+.div-num-tel {
+
+  padding: 5px
+}
+
+#div-email {
+
+  text-align: center;
+  padding: 5px 0px;
+
+}
+
+.div-operadora {
+
+  padding: 5px 0px;
+
+}
+
+#div-icon-eraser {
+
+  text-align: end;
+  display: flex;
+  justify-content: space-between
+}
+
+#divCourse {
+  border: 1px solid lightGray;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#div-tiponum-ced {
+  display: flex
+}
+
+#tipoDocReprBusq {
+
+  height: 20px;
+  margin-top: 5px;
+}
+
+
+.div-borders {
+
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid lightGray;
+  border-radius: 5px;
+  padding-top: 30px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px
+}
+
+.row {
+
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+
+}
+
+.row-alumno,
+.row-doc,
+.row-curso,
+.row-busq {
+
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  border: 1px solid lightGray;
+  border-radius: 5px;
+  width: 96%;
+
+}
+
+.row-doc{
+
+  margin-top: 17px;
+}
+
+
+.row-curso {
+
+  margin-top: 100px;
+}
+
+.row-busq {
+
+  margin: 10px;
+  border: 1px solid lightGray;
+  background: #EAECEE;
+  padding: 30px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  width: auto;
+  margin: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+.col-md-12 {
+
+  padding: 0px
+}
+
+.col-form-label {
+
+  margin-right: 25px;
+
+
+}
+
+.col-form-label-fech {
+
+  margin-right: 30px
+}
+
+.col-form-label-ced {
+
+  margin-right: 82px;
+
+}
+
+
+.col-form-label-dir {
+
+  margin-right: 25px;
+
+}
+
+.col-label-LugarNacimiento {
+
+  margin-right: 50px;
+
+}
+
+.col-label-Nacionalidad {
+
+  margin-right: 39px;
+}
+
+.col-form-label-busqCedula {
+  margin-right: 10px
+}
+
+
+#col-label-Profesion {
+
+  margin-right: 92px
+}
+
+#col-label-Ingresos {
+
+  margin-right: 0px;
+}
+
+#col-label-NombEmpr {
+
+  margin-right: 38px
+}
+
+#col-label-telefEmpr {
+
+  margin-right: 25px
+}
+
+#col-form-label-parentesco,
+#col-form-label-civil {
+
+  margin-right: 10px
+}
+
+
+input {
+
+  text-transform: uppercase;
+
+}
+
+.input-nacionalidad,
+.selectLugarNac,
+.input-parentesco {
+
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  width: 40%
+}
+
+.input-civil {
+
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  width: 70%
+}
+
+.input-cmb-cedula {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.input-cedula.inputCed-busq {
+
+  height: 25px;
+  margin-right: 20px;
+  margin-top: 5px
+}
+
+
+.input-nombre-apellido,
+.input-info-empresa {
+
+  border: 1px solid #b5b5b5;
+  width: 250px;
+  border-radius: 5px
+}
+
+.input-nombre-completo {
+
+  border: 1px solid #b5b5b5;
+  width: 200px;
+
+}
+
+.input-nombre-apellido-Repr,
+.input-nombre-apellido-Repr-res {
+
+  width: 352px;
+  border: .5px solid #ccc;
+  border-radius: 5px
+}
+
+
+.input-cedula {
+
+  border: 1px solid #b5b5b5;
+  width: 195px;
+  border-radius: 5px
+}
+
+
+.input-fech-nac {
+
+  border: 1px solid #b5b5b5;
+  width: 220px;
+  border-radius: 5px
+}
+
+
+.input-fech-nac-rep {
+
+  border: 1px solid #b5b5b5;
+  width: 150px;
+}
+
+.input-fech-ing {
+
+  border: 1px solid #b5b5b5;
+  margin-left: 0px;
+  border-radius: 5px;
+  width: 210px
+}
+
+
+.input-num-tlf-empr {
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  width: 165px
+}
+
+.input-edad {
+
+  border: 1px solid #b5b5b5;
+  width: 50px;
+  margin-left: 0px;
+  border-radius: 5px
+}
+
+.input-sexo {
+
+  border: 1px solid #b5b5b5;
+  width: 130px;
+  margin-left: 0px;
+  border-radius: 5px
+}
+
+.input-parentesco {
+
+  border: 1px solid #b5b5b5;
+  width: 110px;
+}
+
+
+.input-ed-civ {
+
+  border: 1px solid #b5b5b5;
+  width: 105px;
+}
+
+
+.input-est-acad {
+
+  border: 1px solid #b5b5b5;
+  width: 110px;
+}
+
+
+.input-txtDireccion, .input-asignatura {
+
+  border: 1px solid #b5b5b5;
+  width: 801px;
+  border-radius: 5px
+}
+
+.input-estado {
+
+  border: 1px solid #b5b5b5;
+  width: 120px;
+}
+
+.input-cod-operadora {
+
+  border: 1px solid #b5b5b5;
+  width: 80px;
+  border-radius: 5px
+}
+
+.input-cod-operadora-emp {
+
+  border: 1px solid #b5b5b5;
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 5px
+}
+
+.input-num-tlf {
+
+  border: 1px solid #b5b5b5;
+  width: 200px;
+  border-radius: 5px
+}
+
+.input-email {
+
+  border: 1px solid #b5b5b5;
+  width: 285px;
+  text-transform: lowercase;
+  border-radius: 5px;
+}
+
+
+#label-edad-doc, #label-sexo-doc{
+
+  width: 100%
+}
+
+
+#idCurso {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+
+}
+
+#annioescolar {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px
+}
+
+#annio {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 60px;
+  border-radius: 5px
+}
+
+#eraser {
+
+  color: #2F5597;
+  cursor: pointer;
+  font-size: 28px;
+  margin-right: 30px
+}
+
+#seccion {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 60px;
+  border-radius: 5px
+}
+
+#turno {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 110px;
+  border-radius: 5px
+}
+
+#nivel {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px
+}
+
+#especialidad {
+
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px
+}
+
+#idCurso {
+
+  height: 26px;
+  margin-right: 5px;
+  width: 50px;
+  border-radius: 5px
+}
+
+.icons {
+
+  margin-right: 10px;
+  font-size: 22px;
+  opacity: 0.7;
+
+}
+
+#home,
+#atras {
+  color: #2F5597;
+  cursor: pointer
+}
+
+
+#magnifyingGlass {
+
+  cursor: pointer;
+  color: white
+}
+
+#salir {
+
+  color: red;
+  cursor: pointer
+}
+
+.icons:hover {
+
+  opacity: 1;
+
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1200px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1200px) and (orientation:landscape) {
+
+
+  * {
+    /*color: aqua;*/
+
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 300px
+  }
+
+    
+
+  .card-table {
+    
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
+  
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+
+  }
+
+
+  h2 {
+    font-size: 35px;
+  }  
+
+
+  #col-label-annioServicio{
+
+    margin-right: 250px;
+
+  }
+
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+    padding: 5px 0px;
+
+  }
+
+  #divSegNombreDoc,    
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc,
+  #divLugNacimiento,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divNacionalidad,
+  #divTelefEmpresa {
+
+    text-align: start;
+
+  }
+
+
+  #tipoDocReprBusq {
+
+    width: 90%
+  }
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+  #col-label-SegundoNomb {
+
+    margin-right: 22px;
+
+  }
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 20px;
+
+  }
+
+  #col-label-ocupacion {
+
+    margin-right: 90px
+  }
+
+
+  .col-label-Nacionalidad {
+
+    margin-right: 200px;
+
+  }
+
+  .col-form-label-edad {
+
+
+    margin-right: 10px
+  }
+
+  .col-form-label-sexo {
+
+
+    margin-right: 10px;
+
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 300px
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px
+  }
+
+  .input-cedula.inputCed-busq {
+
+    width: 90%
+  }
+
+  .input-cod-operadora-emp {
+
+    position: relative;
+    left: -170px;
+    top: 33px
+  }
+
+
+  .input-nombre-apellido, 
+  .input-cursos,
+  .input-profesion {
+
+    width: 90%
+  }
+
+  .input-cedula {
+
+    width: 40%;
+
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 90%
+  }
+
+  .input-sexo {
+
+    width: 70%;
+    margin-left: 0px
+  }
+
+  .input-fech-nac {
+
+    width: 60%
+  }
+
+  .input-num-tlf-empr {
+
+    width: 160px;
+    margin-left: 75px
+  }
+
+
+  #sexoDoc {
+
+    width: 80%
+  }
+
+  .input-edad {
+
+    width: 30%;
+    margin-left: 0px
+  }
+
+
+  .input-email {
+
+    width: 80%
+  }
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-fech-ing {
+
+    width: 90%;
+    margin-left: 0%
+  }
+
+  .input-num-tlf {
+
+    width: 85%
+  }
+
+
+  .input-nacionalidad,
+  .input-lugar-nacimiento {
+
+    width: 90%
+  }
+
+  .input-nacionalidad {
+
+    width: 60%
+  }
+
+  .input-civil {
+
+    width: 70%
+  }
+
+  .input-parentesco {
+
+    width: 100%
+  }
+
+  .input-info-empresa {
+
+    width: 90%
+  }
+
+  .selectLugarNac {
+
+    width: 56%
+  }
+
+  .row-busq {
+
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: 96%
+  }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 990px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:991.5px) and (orientation:landscape) {
+
+  * {
+    /*color: green;*/
+
+  }
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #col-label-annioServicio{
+
+    width:150px
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px
+  }
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc {
+
+    text-align: start;
+
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  #edadDoc{
+
+    width: 40%
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 22px;
+
+  }
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 20px;
+
+  }
+
+  .col-form-label-edad {
+
+    margin-right: 150px
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 0px
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 200px
+  }
+
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px
+  }
+
+  .input-nombre-apellido {
+
+    width: 90%
+  }
+
+  .input-cedula {
+
+    width: 50%;
+
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 110%
+  }
+
+  .input-sexo {
+
+    width: 75%;
+    margin-left: 0px
+  }
+
+  #sexoDoc,
+  .input-civil {
+
+    width: 105%
+  }
+
+  .input-edad {
+    
+    margin-left: 0px
+  }
+
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-fech-ing {
+
+    width: 95%;
+    margin-left: 0%
+  }
+
+  .input-num-tlf {
+
+    width: 85%
+  }
+
+  .input-num-tlf-empr {
+
+    margin-left: 75px
+  }
+
+
+  .input-parentesco
+   {
+
+    width: 50%
+  }
+
+  .input-fech-nac {
+
+    width: 60%
+  }
+
+  .selectLugarNac {
+
+    width: 70%
+  }
+
+  .row-busq,
+  .row-alumno,  
+  .row-doc {
+
+    width: 94%
+  }
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 767.20px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:767.20px) and (orientation:landscape) {
+
+  * {
+    font-size: 15px;     
+    /*color: brown*/
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 250px
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  form {
+
+    box-shadow: none;
+    border: unset;
+
+  }
+
+  .card-table {
+
+    margin-left: 20px;
+    margin-right: 20px
+  }
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+  .row {
+
+    margin-top: 0%;
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+    width: 100%
+  }
+
+  .row-busq {
+
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #rowtablecursos {
+
+    margin-left: 0px;
+
+  }
+
+  #col-form-label-fechIngr{
+
+    margin-left:5px
+  }
+
+  .div-borders {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
+
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc,
+  #divOcupacion,
+  #divTelefEmpresa,
+  #divNacionalidad {
+
+    text-align: start;
+
+  }
+
+  #divTelefEmpresa {
+
+    width: 100%
+  }
+
+  #divCourse {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
+  .input-nombre-apellido-Repr-res,
+  .col-form-label-repr-res {
+
+    margin-left: -20px
+  }
+
+
+  .div-num-tel {
+
+    left: -5%;
+
+  }
+
+
+  .col-form-label-ced {
+
+    margin-right: 150px
+  }
+
+  .col-label-Nacionalidad {
+
+    margin-right: 0px;
+  } 
+  
+
+  .input-fech-nac {
+
+    width: 140px
+  }
+
+  .input-nombre-apellido {
+
+    width: 200px
+  }
+
+  .input-edad {
+
+    width: 110px;
+    margin-left: 0px
+  }
+
+
+  .input-cod-operadora {
+
+    width: 50%
+  }
+
+  #edadDoc {
+
+    width: 50px
+  }
+
+
+  .input-cedula {
+
+    width: 100px;
+
+  }
+
+  .input-sexo {
+
+    margin-left: 0px;
+    width: 115px
+  }
+
+  #sexoDoc {
+
+    width: 112px
+  }
+
+
+  .input-civil {
+
+    width: 120px
+  }
+
+
+  .input-fech-ing {
+
+    margin-left: 0px;
+    width: 120px;
+    margin-left: 5px
+  }
+
+
+  .input-cod-operadora-emp {
+
+    left: 5px;
+    top: 0px;
+    width: 35%
+  }
+
+  .input-num-tlf {
+
+    width: 100px
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 490px
+  }
+
+  .input-cmb-cedula {
+
+    width: 20%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 265px
+  }
+
+  .input-nacionalidad,
+  .input-lugar-nacimiento {
+
+    width: 200px
+  }
+
+  .input-info-empresa {
+
+    width: 140px;
+  }
+
+  .input-fech-nac {
+
+    width: 144px
+  }
+
+  .input-parentesco {
+
+    width: 110px
+  }
+
+  .input-num-tlf-empr {
+    position: relative;
+    top: -21px;
+    margin-left: 85px;
+    width: 158px
+  }
+
+  .selectLugarNac {
+
+    width: 90%
+  }
+
+  .icons {
+
+    font-size: 16px;
+  }
+
+  #eraser {
+
+    font-size: 20px;
+  }
+
+  #getRpr {
+
+    height: 35px;
+  }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 570px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:570px) and (orientation:landscape) {
+
+  * {
+   
+    font-size: 14px
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 5px;
+
+  }
+
+  .col-form-label-repr {
+
+    margin-left: 0px
+  }
+
+  #primNombDoc {
+
+    margin-left: 0px
+  }
+
+
+  .card-table {
+
+    margin-left: 20px;
+    margin-right: 20px
+  }
+
+
+  .div-num-tel {
+
+    top: -110px;
+    left: 210px
+  }
+
+
+
+  #div-icons {
+
+    margin-left: 20px;
+  }
+
+  #div-tipo-num-ced {
+
+    margin-bottom: 10px
+  }
+
+
+  #divCourse {
+
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  #edadDoc {
+
+    width: 45px
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 88px
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 23px
+  }
+
+  .col-label-Nacionalidad {
+
+    margin-right: 68px;
+
+  }
+
+  .col-form-label-edad,
+  .col-form-label-sexo {
+
+    margin-right: 50px;
+
+  }
+
+  .col-form-label-fech {
+
+    margin-right: 20px
+  }
+
+
+  .row.div-telefCorreo-Titulo {
+
+    margin-left: 0px;
+
+  }
+
+  #col-label-SegundoNombDoc {
+
+    margin-right: 24px;
+
+  }
+
+  #col-label-SegundoApellDoc {
+    margin-right: 21px;
+  }
+
+  #col-label-Profesion {
+
+    margin-right: 88px;
+  }
+
+  #col-label-ocupacion {
+
+    margin-right: 80px;
+  }
+
+  #col-label-NobEmpr {
+
+    margin-right: 37px;
+  }
+
+  #col-label-telefEmpr {
+
+    margin-right: 34px;
+  }
+
+  #col-form-label-fechIngr {
+
+    margin-right: 35px;
+
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 30px;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 30px;
+  }
+
+  .col-sm-6.div-telef,
+  .col-sm-6.div-correo {
+    width: 50%
+  }
+
+  #col-label-Ingresos {
+
+    margin-right: 63px;
+  }
+
+
+  .input-cmb-cedula {
+
+    width: 10%
+  }
+
+  .input-parentesco {
+
+    width: 120px
+  }
+
+  .input-edad {
+
+    width: 10%
+  }
+
+  .input-sexo {
+
+    width: 30%;
+
+  }
+
+  .input-cedula {
+
+    width: 25%
+  }
+
+  .input-nombre-apellido {
+
+    width: 44%
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-num-tlf {
+
+    width: 80%
+  }
+
+
+  .input-fech-ing {
+
+    width: 30%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 70%
+  }
+
+  .selectLugarNac,
+  .input-nacionalidad {
+
+    width: 40%
+  }
+
+  .input-num-tlf-empr {
+    position: relative;
+    top: -30px;
+    margin-left: 215px;
+    width: 90px
+  }
+
+  .input-cod-operadora-emp {
+    left: 0px;
+    top: 0px;
+    width: 15%;
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: unset;
+    margin-left: 20px;
+    margin-right: 20px
+  }
+
+  .row-busq {
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  .div-borders {
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 540px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:540px) and (orientation:landscape) {
+
+  * {
+    /*color: cadetblue;*/
+    font-size: 14px
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 5px;
+
+  }
+
+  .col-form-label-repr {
+
+    margin-left: 0px
+  }
+
+  #primNombDoc {
+
+    margin-left: 0px
+  }
+
+
+  #div-icons {
+
+    margin-left: 10px;
+  }
+
+  #div-tipo-num-ced {
+
+    margin-bottom: 10px
+  }
+
+  #col-label-SegundoNombDoc {
+
+    margin-right: 21px;
+  }
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 21px;
+
+  }
+
+  .card-table {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .col-sm-6.div-correo,
+  .col-sm-6.div-telef {
+
+    width: 50%
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 88px
+  }
+
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 23px
+  }
+
+
+  .col-label-Nacionalidad {
+
+    margin-right: 69px;
+
+  }
+
+
+  .col-form-label-edad,
+  .col-form-label-sexo {
+
+    margin-right: 55px;
+   
+
+  }
+
+
+  .col-form-label {
+
+    margin-right: 30px;
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+  #col-form-label-parentesco {
+
+    margin-right: 15px
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 35px;
+  }
+
+  #col-form-label-fechIngr {
+
+    margin-left: 0px;
+    margin-right: 35px;
+
+  }
+
+  #label-edad-doc{
+
+    margin-right:55px;
+    width:unset
+
+  }
+
+  #col-label-telefEmpr {
+
+    margin-right: 22px;
+  }
+
+  #col-label-NombEmpr {
+
+    margin-right: 24px;
+  }
+
+  #col-label-Profesion {
+
+    margin-right: 72px;
+  }
+
+  #col-label-ocupacion {
+
+    margin-right: 64px;
+  }
+
+  #col-label-Ingresos {
+
+    margin-right: 47px;
+  }
+
+  #col-label-categoria{
+
+    margin-right: 110px
+  }
+
+
+  .input-cmb-cedula {
+
+    width: 10%
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 10%
+  }
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 30%;
+
+  }
+
+  #label-sexo-doc{
+
+    width:unset
+
+  }
+
+  .input-cedula {
+
+    width: 33%
+  }
+
+  .input-nombre-apellido,
+  .input-info-empresa {
+
+    width: 44%
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-num-tlf {
+
+    width: 100%
+  }
+
+
+  .input-fech-ing {
+
+    width: 40%
+  }
+
+  .input-fech-nac {
+
+    width: 39.5%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 70%
+  }
+
+  .input-parentesco,
+  .input-civil {
+
+    width: 30%
+  }
+
+  .selectLugarNac,
+  .input-nacionalidad {
+
+    width: 39%
+  }
+
+  .input-num-tlf-empr {
+    position: relative;
+    top: -30px;
+    margin-left: 200px;
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .div-borders {
+
+    margin-right: 10px;
+    margin-left: 10px
+  }
+
+  .input-cod-operadora-emp {
+
+    left: 0px;
+    top: 0px;
+    width: 15%;
+
+  }
+
+  .row-busq {
+
+    margin-left: 10px;
+    margin-right: 10px
+  }
+
+
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Horizontal +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:landscape) {
+
+
+  * {
+    /*color: orange;*/
+    font-size: 12px;
+  }
+
+  h2 {
+
+    font-size: 20px
+  }
+
+
+  #div-tipo-num-ced {
+
+    margin-bottom: 10px
+  }
+
+
+  .col-form-label-ced {
+
+    margin-right: 200px
+  }
+
+
+  .col-form-label-fech {
+
+    margin-right: 50px;
+
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 50px
+  }
+
+  .col-label-Nacionalidad {
+
+    margin-right: 52px;
+
+  }
+
+  .col-form-label-edad,
+  .col-form-label-sexo {
+
+    margin-right: 55px;
+
+  }
+
+  .row-busq {
+
+    padding: 5px
+  }
+
+  #div-tiponum-ced {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  #col-form-label-fechIngr {
+
+    margin-right: 32px;
+
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 32px;
+  }
+
+  .col-form-label-dir {
+
+    margin-top: 45px;
+  }
+
+  .col-form-label-busqCedula {
+
+    margin-right: 0px;
+  }
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 20%
+  }
+
+  .input-sexo,
+  #sexoDoc,
+  .input-civil,
+  .input-parentesco {
+
+    width: 45%;
+
+  }
+
+  .input-cedula {
+
+    width: 53%
+  }
+
+  .input-nombre-apellido {
+
+    width: 70%
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-num-tlf {
+
+    width: 100%
+  }
+
+  .input-fech-ing {
+
+    width: 52%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 110%
+  }
+
+  .input-fech-nac {
+
+    width: 70%
+  }
+
+  .input-nacionalidad,
+  .input-lugar-nacimiento {
+
+    width: 44%;
+
+  }
+
+  .selectLugarNac,
+  .input-nacionalidad,
+  .input-info-empresa {
+
+    width: 70%;
+  }
+
+  .input-cod-operadora-emp {
+
+    position: relative;
+    left: -120px;
+    top: 28px;
+    width: 30%
+  }
+
+  .input-num-tlf-empr {
+
+    position: unset;
+    margin-left: 75px;
+
+  }
+
+  #tipoDocReprBusq {
+
+    margin-right: 0px;
+    width: 15%;
+  }
+
+  #label-edad-doc,
+  #label-sexo-doc {
+
+    width:unset;
+    margin-right: 49px;
+
+  }
+
+  .input-cedula.inputCed-busq {
+
+    margin-right: 0px;
+    width: 50%
+  }
+
+  .input-cod-operadora {
+
+    width: 75%;
+  }
+
+  #getRpr {
+
+    height: 30px;
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    margin-right: 10px;
+    margin-left: 10px;
+    width: unset
+  }
+
+  #div-icons {
+
+    margin-left: 8px;
+
+  }
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 1024px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:1024px) and (orientation:portrait) {
+
+  * {
+    /*color:aqua*/
+  }
+
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac {
+
+    text-align: start
+  }
+
+  .input-nombre-apellido-Repr-res {
+
+    width: 300px;
+  }
+
+
+  .col-form-label-ced {
+
+    margin-right: 300px
+  }
+
+  .col-form-label-fech,
+  .col-form-label-sexo {
+
+    margin-right: 20px
+  }
+
+  .col-form-label-edad {
+
+    margin-right: 200px
+  }
+
+  .input-edad,
+  .input-sexo {
+
+    margin-left: 0px;
+  }
+
+
+  .col-form-label-dir {
+
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .col-form-label-busqCedula {
+
+    margin-right: 0px;
+  }
+
+
+  .input-fech-ing {
+
+    width: 120px
+  }
+
+
+  .input-num-tlf {
+
+    width: 150px
+  }
+
+  .input-cedula {
+
+    width: 150px
+  }
+
+  #label-edad-alumn {
+
+    margin-right: 10px
+  }
+
+  #tipoDocReprBusq {
+
+    width: 90%
+  }
+
+
+  .input-cedula.inputCed-busq {
+
+    width: 90%
+  }
+
+  .input-num-tlf-empr {
+    width: 110px
+  }
+
+  .input-nombre-apellido {
+
+    width: 200px
+  }
+
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 950px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:950px) and (orientation:portrait) {
+
+  * {
+    font-size: 15px;
+    /*color: blue;*/
+
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 300px
+  }
+
+  .card-table {
+    
+    margin-left: 40px;
+    margin-right: 0px
+  }
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px
+  }
+
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc,
+  #divNacionalidad,
+  #divOcupacion,
+  #divTelefEmpresa {
+
+    text-align: start;
+
+  }
+
+
+  #divLugNacimiento, 
+  #divprofesion, 
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,  
+  #divCursoCuatro {
+
+    text-align: start;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+    margin-left: 0px;
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 22px;
+
+  }
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 20px;
+
+  }
+
+
+  .col-form-label-edad {
+
+    margin-right: 150px
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 200px
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px
+  }
+  
+  .col-form-label-busqCedula {
+
+    margin-right: 10px
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 90%
+  }
+
+
+  .input-cedula {
+
+    width: 55%;
+
+  }
+
+  .input-civil {
+
+    width: 110%
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 110%
+  }
+
+  .input-sexo {
+
+    margin-left: 0px
+  }
+
+  #sexoDoc {
+
+    width: 110%
+  }
+
+  .input-edad {
+
+    width: 90%;
+    margin-left: 0px
+  }
+
+  #edadDoc {
+
+    width: 40%
+  }
+
+  #col-label-annioServicio {
+
+    width: 100%
+  }
+
+  .input-cmb-cedula {
+
+    width: 20%
+  }
+
+  .input-fech-nac {
+
+    width: 90%
+  }
+
+  .input-fech-ing {
+
+    width: 100%;
+    margin-left: 0%
+  }
+
+  .input-num-tlf {
+
+    width: 85%
+  }
+
+  .input-nacionalidad,
+  .input-lugar-nacimiento,
+  .selectLugarNac {
+
+    width: 90%
+  }
+
+  .input-info-empresa {
+
+    width: 90%
+  }
+
+
+  .input-parentesco {
+
+    width: 110%
+  }
+
+  .input-num-tlf-empr {
+
+    margin-left: 93px
+  }
+
+  .input-cod-operadora-emp {
+
+    position: relative;
+    top: 30px;
+    left: -150px
+  }
+
+
+
+  #rowtablecursos {
+
+    margin-left: 0px;
+
+  }
+
+  .row-busq {
+
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .row-alumno,
+  .row-curso,
+  .row-doc {
+
+    width: 94%
+  }
+
+  #getRpr {
+
+    height: 35px;
+  }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 765px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:765px) and (orientation:portrait) {
+
+  * {
+    font-size: 15px;
+    /*color: greenyellow;*/
+
+  }
+  
+
+  .col-form-label-cedula {
+
+    margin-right: 200px
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: -30px;
+
+  }
+
+  .card-table {
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+
+  #col-label-annioServicio{
+
+    margin-right:90px
+  }
+
+  #div-row-telef-corr {
+
+    height: 0px
+  }
+
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc,
+  #divNacionalidad,
+  #divOcupacion,
+  #divTelefEmpresa {
+
+    text-align: start;
+
+  }
+
+  #divLugNacimiento, 
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno, 
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro {
+
+    text-align: start;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 22px;
+
+  }
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 20px;
+
+  }
+
+
+  .col-form-label-edad {
+
+    margin-right: 150px
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 200px
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px
+  }
+
+  .col-form-label {
+
+    margin-left: 0px;
+  }
+
+
+  .icons {
+    font-size: 18px
+  }
+
+
+  .input-nombre-apellido, 
+  .input-cursos,
+  .input-profesion {
+
+    width: 100%
+  }
+
+
+  .input-cedula {
+
+    width: 55%;
+
+  }
+
+  .input-civil {
+
+    width: 109%
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 130%
+  }
+
+  .input-sexo {
+
+    width: 95%;
+    margin-left: 0px
+  }
+
+  #sexoDoc {
+
+    width: 100%
+  }
+
+  .input-edad {
+
+    margin-left: 0px
+  }
+
+  #edadDoc {
+
+    width: 40%
+  }
+
+
+  .input-email {
+
+    width: 90%
+  }
+
+  .input-cmb-cedula {
+
+    width: 20%
+  }
+
+  .input-fech-nac {
+
+    width: 90%
+  }
+
+  .input-fech-ing {
+
+    width: 100%;
+    margin-left: 8%
+  }
+
+  .input-num-tlf {
+
+    width: 100%
+  }
+
+
+  .input-nacionalidad,
+  .input-lugar-nacimiento,
+  .selectLugarNac {
+
+    width: 90%
+  }
+
+  .input-info-empresa {
+
+    width: 90%
+  }
+
+  .input-num-tlf-empr {
+    position: relative;
+    top: -22px;
+    margin-left: 85px;
+
+  }
+
+  .input-cod-operadora-emp {
+
+    position: unset;
+  }
+
+  .input-parentesco {
+    width: 120%
+  }
+
+  .row-busq {
+
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+
+  .div-borders {
+
+    margin-left: 10px;
+    margin-right: 10px
+  }
+
+  #col-form-label-fechIngr{
+
+    margin-left:8%
+  }
+
+  #divCourse {
+
+    margin-left: 10px;
+    margin-right: 10px
+  }
+
+
+  #div-icons {
+
+    margin-left: 4px
+  }
+
+  #rowtablecursos {
+
+    margin-left: 0px
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: 96%
+  }
+
+  #div-edad, #div-sexo, #div-edo-civil, #div-fecha-ingr-Doc{
+
+    padding:0px
+
+  }
+
+  #div-edo-civil{
+
+    padding-left: 3px
+
+  }
+
+  #div-fecha-ingr-Doc{
+
+    padding-left: 5px;
+  }
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 575.5px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:575.5px) and (orientation:portrait) {
+
+  * {
+    font-size: 14px;
+    /*color: blueviolet*/
+  }  
+
+
+  #col-label-annioServicio{
+
+    width:unset;
+
+  }
+  
+  .col-form-label-cedula {
+
+    margin-right: 5px;
+
+  }
+
+  .col-form-label-repr {
+
+    margin-left: 0px
+  }
+
+  #primNombDoc {
+
+    margin-left: 0px
+  }
+
+  #profesionUno{
+
+    margin-right:22px
+  }
+
+  #label-curso-uno,
+  #label-curso-dos,
+  #label-curso-tres,
+  #label-curso-cuatro{
+
+    margin-right:53px
+  }
+
+  #profesionDos{
+
+    margin-right: 27px;
+
+  } 
+  
+  #label-sexo-doc, #label-edad-doc{
+
+    width:unset;   
+    margin-right: 51px 
+
+  }
+
+  #col-form-label-civil{
+
+    margin-right: 31px;
+  }
+
+  #col-form-label-fechIngr{
+
+    margin:0px;
+    margin-right: 37px
+  }
+
+
+  #div-edad, #div-sexo, #div-edo-civil, #div-fecha-ingr-Doc{
+
+    margin-left:15px;
+    padding-left:0px
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+
+  #col-label-annioServicio{
+
+    margin-right: 33px;
+    
+  }
+
+  #col-label-categoria{
+
+    margin-right: 20px;
+
+  }
+
+
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc {
+
+    text-align: start;
+
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px
+  }
+
+
+  .div-num-tel {
+
+    width: 50%
+  }
+
+
+
+  .col-form-label {
+
+    margin-right: 30px;
+
+  }
+
+  .col-form-label-postGrados{
+
+    margin-right: 20px
+  }
+
+    
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+
+  #col-label-SegundoNomb,
+  #col-label-SegundoNombDoc {
+
+    margin-right: 21px;
+
+  }
+
+  #col-label-SegundoApellDoc,
+  #col-label-SegundoApell {
+
+    margin-right: 21px
+  }
+
+  #col-form-label-parentesco {
+
+    margin-right: 12px;
+  } 
+  
+  #col-label-Profesion {
+
+    margin-right: 81px;
+  }
+
+  #col-label-ocupacion {
+
+    margin-right: 73px;
+  }
+
+  #col-label-NombEmpr {
+
+    margin-right: 33px;
+  }
+
+  #col-label-telefEmpr {
+
+    margin-right: 30px;
+  }  
+
+  
+  .col-label-nacionalidad {
+
+    margin-right: 60px;
+  }
+
+  .col-form-label-sexo,
+  .col-form-label-edad {
+
+    margin-right: 51px
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 15px;
+  }
+
+  .col-form-label-ced {
+
+    margin-right: 96px
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px
+  }
+
+  .col-form-label-fech {
+    margin-right: 30px;
+  }
+
+  .col-label-Nacionalidad {
+
+    margin-right: 60px;
+  }
+
+  #col-label-Ingresos {
+
+    margin-right: 56px;
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 60%
+  }
+
+  .input-cursos,
+  .input-profesion{
+
+    width:80%
+  }
+
+
+  .input-cedula {
+
+    width: 32%;
+
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 80%
+  }
+
+
+  .input-edad,
+  #edadDoc {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 30%
+  }
+
+
+  .input-cmb-cedula {
+
+    width: 12%
+  }
+
+  
+  .input-fech-ing {
+
+    width: 30%;
+    margin: 0px
+  }
+
+  .input-lugar-nacimiento {
+
+    width: 57%
+  }
+
+  .input-civil {
+
+    width: 30%
+  }
+
+  .input-parentesco {
+
+    width: 30%
+  }
+
+  .input-info-empresa {
+
+    width: 60%
+  }
+
+  .input-fech-nac {
+
+    width: 41%
+  }
+
+  .selectLugarNac,
+  .input-nacionalidad {
+
+    width: 45%;
+  }
+
+  .input-num-tlf-empr {
+
+    margin-left: 0px;
+    position: unset
+  }
+
+
+  #label-edad-alumn {
+
+    margin-right: 50px;
+
+  }
+
+  .input-info-empresa {
+
+    width: 200px
+  }
+
+
+  .col-sm-6.div-correo,
+  .col-sm-6.div-telef {
+
+    width: 50%
+  }
+
+
+  #div-icons {
+
+    margin-left: 10px
+  }
+
+  #getRpr {
+
+    height: 35px
+  }
+
+
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 490px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:490px) and (orientation:portrait) {
+
+
+
+  * {
+    font-size: 12px;
+    /*color: aquamarine*/
+  }
+
+  #col-label-annioServicio{
+
+    width:unset
+  }
+
+  #div-Ced-Repr,
+  #div-Nomb-Repr {
+
+    padding: 0px
+  }
+
+  #primNombDoc {
+
+    margin-left: 0px;
+  }
+
+  #col-label-annioServicio{
+
+    margin-right:28px
+    
+  }
+
+
+  .col-form-label-repr {
+
+    margin-right: 5px;
+    margin-left: 0px
+  }
+
+  .col-form-label-cedula {
+
+    margin-right: 5px
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+
+  .row-busq {
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+  #div-icons {
+
+    margin-left: 5px
+  }
+
+  #divSegNombreDoc,   
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-sexo,
+  #div-edad,
+  #div-fecha-ingr-Doc,
+  #divLugNacimiento,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #div-parentesco,
+  #div-edo-civil {
+
+
+    text-align: start;
+
+  }
+
+  #div-fecha-ingr-parent {
+
+    text-align: center;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 26px;
+
+  }
+
+  #col-label-categoria{
+
+    margin-right: 17px;
+
+  }
+
+
+  #col-label-SegundoApellDoc, 
+  #col-label-SegundoNombDoc  {
+
+    margin-right: 17px;
+
+  }
+  
+
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+  #col-form-label-parentesco {
+
+    margin-right: 10px;
+
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 26px;
+  }
+
+  #label-edad-doc{
+
+    margin-right: 43px;
+  }
+
+  #col-label-NombEmpr {
+
+    margin-right: 12px;
+  }
+
+  #col-label-telefEmpr {
+
+    margin-right: 10px;
+  }
+
+  #col-label-ocupacion {
+
+    margin-right: 68px
+  }
+
+  #col-label-Profesion {
+    margin-right: 75px
+  }
+
+  #col-form-label-fechIngr {
+    margin-right: 30px;
+  }
+
+  #col-label-Ingresos {
+
+    margin-right: 53px;
+  }
+
+  #tipoDocReprBusq {
+
+    width: 105%;
+    margin-right: 0px
+  }
+
+  #div-edo-civil, #div-fecha-ingr-Doc{
+
+    padding-left:0px
+
+  }  
+  
+  #label-sexo-doc{
+
+    margin-right: 43px;
+  }
+
+  .col-form-label-fech {
+
+    margin-right: 8px
+  }
+
+  .col-label-Nacionalidad {
+
+    margin-right: 50px;
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 10px;
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label-ced {
+
+    margin-right: 82px
+  }
+  
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 18px
+  }
+
+  #getRpr {
+
+    height: 35px
+  }
+
+
+  .input-cedula.inputCed-busq {
+
+    width: 90%;
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 55%
+  }
+
+
+  .input-cmb-cedula {
+
+    width: 12%
+  }
+
+  .input-cedula {
+
+    width: 36%;
+
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 10%;
+    margin-left: 0px
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 83%
+  }
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 35%
+  }
+
+
+  .input-fech-ing {
+
+    width: 35%
+  }
+
+  .input-fech-nac {
+
+    width: 50%
+  }
+
+  .input-lugar-nacimiento {
+
+    width: 60%
+  }
+
+  .input-nacionalidad {
+
+    width: 50%
+  }
+
+  .input-parentesco,
+  .input-civil {
+
+    width: 35%
+  }
+
+  .input-info-empresa {
+
+    width: 60%
+  }
+
+  .input-num-tlf-empr {
+
+    top: -25px;
+    width: 90px;
+    margin-left: 0px
+  }
+
+  .input-cod-operadora-emp {
+
+    width: 18%
+  }
+
+  .selectLugarNac {
+
+    width: 50%
+  }
+
+
+  #label-edad-alumn {
+    margin-right: 43px;
+
+  }
+
+
+  #spanCorreoDoc {
+
+    margin-left: 15px;
+  }
+
+
+  .icons {
+
+    font-size: 16px;
+  }
+
+  #eraser {
+
+    font-size: 20px;
+  }
+
+  .input-cod-operadora {
+
+    width: 60%
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: 94%
+  }
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 379.20px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:379.20px) and (orientation:portrait) {
+
+
+  * {
+    /*color: pink;*/
+    font-size: 12px
+  }
+
+  
+  #col-label-annioServicio{
+
+    width: 100%
+  }
+
+
+  #spanCorreoDoc{
+
+    margin-left:0px;
+    width:92%
+
+  }
+
+  #label-edad-doc{
+
+    margin-right: 10px
+  }
+
+  #primNombDoc {
+
+    margin-left: 0px
+  }
+
+  #label-sexo-doc{
+
+    margin-right: 10px;
+  }
+
+  .card-table {
+
+    margin-right: 10px;
+    margin-left: 10px
+  }
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  form {
+
+    box-shadow: none;
+    border-radius: none;
+    border: none
+  }
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+  #div-tiponum-ced {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #div-icons {
+
+    margin-left: 12px
+  }
+
+
+  #div-telefCorreo-Titulo {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #tipoDocReprBusq {
+
+    width: 15%
+  }
+
+  .row-alumno,
+  .row-doc,
+  .row-curso {
+
+    width: 94%
+  }
+
+  .input-cursos,
+  .input-profesion{
+
+    width:100%
+  }
+
+  .row-busq {
+
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px
+  }
+
+  .row.div-telef-info {
+
+    position: relative;
+    width: 100%;
+    top: -90px
+  }
+
+  .row1.div-correo-info {
+
+    position: absolute;
+    width: 99%
+  }
+
+  #rowtablecursos {
+
+    margin-left: 0px;
+
+  }
+
+
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,    
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc,
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #div-parentesco,
+  #div-edo-civil,
+  #divIngresos,
+  #div-cursoUno,
+  #div-cursoTres,
+  #div-annioServicio
+  {
+
+    text-align: center;
+  }
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc,
+  #div-parentesco,
+  #div-edo-civil {
+
+    text-align: start;
+    margin-left: 60px
+  }
+
+  #divCourse {
+
+    margin-left: 10px;
+    margin-right: 10px
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: -30px;
+
+  }
+
+  .col-sm-6.div-telef {
+
+    margin-bottom: 60px;
+    width: 100%
+  }
+
+  .col-sm-6.div-correo {
+    width: 100%
+  }
+
+
+  #divNacionalidad,
+  #divLugNacimiento,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro {
+
+    text-align: center;
+    width: 100%
+  }
+
+  #divNacionalidad {
+
+    margin-bottom: 5px
+  }
+
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divOcupacion,
+  #divNombreEmpresa,
+  #divTelefEmpresa {
+
+    text-align: center;
+
+  }
+
+  .div-num-tel {
+    top: -115px;
+    left: 124px;
+  }
+
+  .div-borders {
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #label-edad-alumn {
+
+    margin-right: 10px
+  }
+
+
+  .col-form-label {
+
+    margin-right: 40px;
+    width: 100%
+  }
+
+
+  #col-label-SegundoNomb,
+  #col-label-SegundoApellDoc {
+
+    margin-right: 40px;
+    width: 100%
+  }
+
+  #col-form-label-parentesco {
+
+    margin-right: 10px
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 10px
+  }
+
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+  #col-label-Profesion,
+  #col-label-ocupacion,
+  #col-label-NombEmpr,
+  #col-label-telefEmpr {
+
+    width: 100%
+  }
+
+
+  .col-form-label-edad {
+
+    margin-right: 10px
+  }
+
+  .col-form-label-sexo,
+  #edadDoc {
+
+    margin-right: 10px
+  }
+
+
+  .col-label-Nacionalidad {
+
+    width: 100%;
+    margin-top: 6px
+  }
+
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 35px;
+    width: 100%
+  }
+
+  .col-form-label-ced {
+
+    text-align: start;
+    margin: 5px;
+    width: 100%;
+    margin-right: 70px;
+    text-align: center;
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 35px;
+    width: 100%
+  }
+
+
+  .input-num-tlf {
+
+    width: 50%
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 60%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-cedula {
+
+    width: 46%;
+
+  }
+
+  #edadDoc,
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 100%
+  }
+
+  #sexoDoc,
+  .input-sexo {
+
+    width: 60%
+  }
+
+  .input-civil {
+
+    width: 52%
+  }
+
+  .input-fech-ing {
+
+    width: 54%
+  }
+
+
+  .input-email {
+
+    width: 70%;
+    margin-left: -20px
+  }
+
+
+  .input-parentesco {
+
+    width: 38%
+  }
+
+  .input-fech-nac {
+
+    width: 60%
+  }
+
+  .selectLugarNac {
+
+    width: 70%
+  }
+
+
+  .input-cod-operadora-emp {
+
+    position: relative;
+    left: 0px;
+    top: -3px;
+    width: 22%
+  }
+
+  .input-num-tlf-empr {
+
+    position: relative;
+    top: -2px;
+    margin-left: -2px
+  }
+
+  .input-cedula.inputCed-busq {
+
+    width: 50%
+  }
+
+  .input-cod-operadora {
+
+    width: 35%
+  }
+
+  .input-nacionalidad {
+
+    width: 70%
+  }
+
+  #getRpr {
+
+    height: 32px;
+    padding-left: 5px
+  }
+
+
+  #label-est {
+
+    position: unset
+  }
+
+  .icons {
+
+    font-size: 16px;
+  }
+
+  #eraser {
+
+    font-size: 20px;
+  }
+
+
+
+
+
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 355px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:355px) and (orientation:portrait) {
+
+
+  * {
+     /*color: darkmagenta*/
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc {
+
+    text-align: center;
+  }
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc {
+
+    text-align: start;
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+  #divNacionalidad,
+  #divLugNacimiento,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro {
+
+    text-align: center
+  }
+
+  #divNacionalidad {
+
+    margin-bottom: 5px
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 24px;
+
+  }
+
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 22px;
+
+  }
+
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+  #col-label-PrimerApell {
+
+    margin-right: 40px;
+
+  }
+
+ 
+  #col-label-SegundoApellDoc {
+
+    margin-right: 35px;
+
+  }
+
+
+  .col-form-label-edad,
+  .col-form-label-sexo,
+  #col-form-label-civil {
+
+    margin-right: 10px;
+  }
+
+
+  .col-label-Nacionalidad {
+
+    margin-right: 60px;
+    width: 100%
+  }
+
+  .col-label-LugarNacimiento {
+
+    margin-right: 70px;
+    width: 100%
+  }
+
+  .col-form-label-ced {
+
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    margin-right: 200px;
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 5px
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 60%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-cedula {
+
+    width: 46%;
+
+  }
+
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 90%
+  }
+
+  .input-sexo {
+
+    width: 60%
+  }
+
+  #sexoDoc {
+
+    width: 60%
+  }
+
+
+  .input-fech-ing {
+
+    width: 53%
+  }
+
+
+  .input-email {
+
+    width: 80%
+  }
+
+
+
+  .input-civil {
+
+    width: 52%
+  }
+
+  .input-fech-nac {
+
+    width: 60%
+  }
+
+  .input-parentesco{
+
+    width: 43%
+  }
+
+
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 320px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:320px) and (orientation:portrait) {
+
+
+  * {
+    /*color: #2F5597*/
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc {
+
+    text-align: center;
+  }
+
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc {
+
+    text-align: start;
+  }
+
+  #divNacionalidad,
+  #divLugNacimiento,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro {
+
+    text-align: center
+  }
+
+  #divNacionalidad {
+
+    margin-bottom: 5px
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+
+
+  #div-icons {
+
+    margin-left: 10px;
+
+  }
+
+  .div-num-tel {
+
+    top: -115px;
+    left: 100px;
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: -30px;
+
+  }
+
+  #col-label-SegundoNomb {
+
+    margin-right: 24px;
+
+  }
+
+ 
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 22px;
+
+  }
+
+
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+  #col-form-label-parentesco {
+
+    margin-right: 10px;
+  }
+
+  #col-form-label-civil {
+
+    margin-right: 10px;
+  }
+
+
+  .col-form-label-ced {
+
+    text-align: center;
+    margin: 5px;
+    width: 100%
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 0px
+  }
+
+  .col-form-label-edad {
+
+    margin-right: 10px
+  }
+
+  .col-form-label-sexo {
+
+    margin-right: 10px
+  }
+
+  #sexoDoc,
+  .input-sexo {
+
+    width: 69%
+  }
+
+  .input-nombre-apellido {
+
+    width: 60%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 15%
+  }
+
+  .input-cedula {
+
+    width: 46%;
+
+  }
+
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 100%
+  }
+
+  .input-civil {
+
+    width: 62%
+  }
+
+  .input-parentesco {
+
+    width: 50%
+  }
+
+  .input-fech-ing {
+    width: 63%
+  }
+
+  .input-civil {
+
+    width: 60%
+  }
+
+
+  .input-email {
+
+    width: 80%
+  }
+
+
+
+  .input-fech-nac {
+
+    width: 60%
+  }
+
+  .input-cod-operadora {
+
+    width: 38%
+  }
+
+  .input-cod-operadora-emp {
+
+    width: 25%
+  }
+
+  .row-busq {
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 310px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:310px) and (orientation:portrait) {
+
+  * {
+
+    /*color: orangered;*/
+  }
+
+
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc,
+  #divIngresos {
+
+    text-align: center;
+  }
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc,
+  #div-parentesco,
+  #div-edo-civil {
+
+    text-align: start;
+    margin-left: 20px;
+
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 75%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 20%
+  }
+
+  .input-cedula {
+
+    width: 46%;
+
+  }
+
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 90%
+  }
+ 
+
+  .input-parentesco,
+  .input-civil {
+
+    width: 61%
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 20%
+  }
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 70%
+  }
+
+  .input-num-tlf {
+
+    width: 75%
+  }
+
+  .input-email {
+
+    width: 80%
+  }
+
+
+  .input-fech-nac {
+
+    width: 55%
+  }
+
+
+  .col-form-label-repr-res,
+  .input-nombre-apellido-Repr-res {
+
+    margin-left: unset;
+
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 24px;
+
+  }
+
+ 
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 22px;
+  }
+
+  #getRpr {
+
+    padding-left: 5px;
+  }
+
+  .row-busq {
+
+    padding: 5px
+  }
+
+  #tipoDocReprBusq {
+
+    width: 20%
+  }
+
+
+  .input-cod-operadora-emp {
+
+    width: 30%
+  }
+
+  .input-cod-operadora {
+
+    width: 50%
+  }
+
+  .input-fech-ing {
+
+    width: 63%
+  }
+
+  .input-nacionalidad {
+
+    width: 80%
+  }
+
+  .col-form-label-ced {
+
+    text-align: center;
+    margin: 5px;
+    width: 100%
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 0px
+  }
+
+
+  .col-form-label-edad,
+  .col-form-label-sexo,
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+
+  .selectLugarNac {
+
+    width: 80%
+  }
+
+  #div-icons {
+
+    margin-left: 8px;
+
+  }
+
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 240px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:240px) and (orientation:portrait) {
+
+  * {
+
+    /*color: blue;*/
+  }
+
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc,
+  #divIngresos {
+
+    text-align: center;
+  }
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc,
+  #div-parentesco,
+  #div-edo-civil {
+
+    text-align: start;
+    margin-left: 20px;
+
+  }
+
+  #div-email {
+
+    width: 95%;
+
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 100%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 25%
+  }
+
+  .input-cedula {
+
+    width: 60%;
+
+  }
+
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 90%
+  }
+
+
+  .input-fech-ing {
+
+    width: 90%
+  }
+
+  .input-parentesco,
+  .input-civil {
+
+    width: 90%
+  }
+
+  .input-nacionalidad {
+
+    width: 100%
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 20%
+  }
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 90%
+  }
+
+  .input-num-tlf {
+
+    width: 85%
+  }
+
+  .input-email {
+
+    width: 80%;
+    margin-left: -10px
+  }
+
+
+  .input-fech-nac {
+
+    width: 80%
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 24px;
+
+  }
+
+  
+  #col-label-SegundoApellDoc {
+
+    margin-right: 22px;
+  }
+
+  #getRpr {
+
+    padding-left: 5px;
+  }
+
+  .row-busq {
+
+    padding: 5px
+  }
+
+  #tipoDocReprBusq {
+
+    width: 30%
+  }
+
+
+  .input-cod-operadora-emp {
+
+    width: 50%
+  }
+
+  .input-cod-operadora {
+
+    width: 65%
+  }
+
+  .input-info-empresa {
+
+    width: 100%
+  }
+
+
+
+  .col-form-label-ced {
+
+    text-align: center;
+    margin: 5px;
+    width: 100%
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 0px
+  }
+
+
+  .col-form-label-edad,
+  .col-form-label-sexo,
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+
+  .selectLugarNac {
+
+    width: 100%
+  }
+
+  #div-icons {
+
+    margin-left: 8px;
+
+  }
+
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++  HASTA 210px - Vertical +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only Screen and (max-width:210px) and (orientation:portrait) {
+
+  * {
+
+    /*color: green;*/
+  }
+
+
+  h2 {
+
+    font-size: 20px;
+  }
+
+
+  .card-header,
+  .card-body,
+  .container {
+
+    padding: 0px;
+
+  }
+
+
+  #graduado_{
+
+    display:unset
+  }
+
+
+  #tipoDocReprBusq {
+
+    width: 50%;
+
+  }
+
+  .input-cedula.inputCed-busq {
+
+    width: 82%;
+
+
+  }
+
+  #div-row-telef-corr {
+
+    height: 0px;
+
+  }
+
+
+
+  #div-fecha-Nac,
+  #div-tipo-num-ced,
+  #div-Nomb-Repr,
+  #div-Ced-Repr,
+  #divPrimNombreDoc,
+  #divSegNombreDoc,
+  #divprofesion,
+  #div-postGradoUno,
+  #div-profesionUno,
+  #divCategoria,
+  #divCursoDos,
+  #divCursoCuatro,
+  #divPrimApellidoDoc,
+  #divSegApellidoDoc,
+  #divIngresos {
+
+    text-align: center;
+  }
+
+  #div-edad,
+  #div-sexo,
+  #div-fecha-ingr-Doc,
+  #div-parentesco,
+  #div-edo-civil {
+
+    text-align: start;
+    margin-left: 0px;
+
+  }
+
+  .row.div-telef-info {
+
+    top: -90px
+  }
+
+  #div-correo {
+
+    margin-top: 30px;
+  }
+
+
+  .input-nombre-apellido {
+
+    width: 100%;
+
+  }
+
+  .input-cmb-cedula {
+
+    width: 50%
+  }
+
+  .input-cedula {
+
+    width: 100%;
+
+  }
+
+  .input-edad {
+
+    width: 15%;
+    margin-left: 0px
+  }
+
+  .input-txtDireccion, .input-asignatura {
+
+    width: 100%
+  }
+
+  .input-nombre-apellido-Repr,
+  .input-nombre-apellido-Repr-res {
+
+    width: 90%
+  }
+
+
+  .input-fech-ing {
+
+    width: 100%
+  }
+
+  .input-parentesco,
+  .input-civil {
+
+    width: 100%
+  }
+
+  .input-edad,
+  #edadDoc {
+
+    width: 30%
+  }
+
+  .input-sexo,
+  #sexoDoc {
+
+    width: 100%
+  }
+
+  .input-num-tlf {
+
+    width: 110%
+  }
+
+  .input-email {
+
+    width: 80%
+  }
+
+  .input-cod-operadora {
+
+    width: 90%
+  }
+
+  .input-cod-operadora-emp {
+
+    width: 69%
+  }
+
+  .input-fech-nac {
+
+    width: 100%
+  }
+
+  .input-nacionalidad {
+
+    width: 100%
+  }
+
+
+  .col-form-label {
+
+    margin-right: 35px;
+
+  }
+
+
+  #col-label-SegundoNomb {
+
+    margin-right: 24px;
+
+  }
+  
+
+  #col-label-SegundoApellDoc {
+
+    margin-right: 22px;
+
+  }
+
+  .col-form-label-ced {
+
+    text-align: center;
+    margin: 5px;
+    width: 100%
+  }
+
+  .col-form-label-dir {
+
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center
+  }
+
+
+  .col-form-label {
+
+    margin-right: 0px;
+  }
+
+
+  .col-form-label-fech {
+
+    margin-top: 10px;
+    margin-right: 0px
+  }
+
+
+  .col-form-label-edad,
+  .col-form-label-sexo,
+  #col-form-label-fechIngr {
+
+    margin-right: 10px
+  }
+
+
+  .selectLugarNac {
+
+    width: 100%
+  }
+
+}
